@@ -1,6 +1,7 @@
 module PCA
-(getBases, getPcaNbds)
-  where
+       ( getBases
+       , getPcaNbds
+       ) where
 
 import qualified Data.Vector as V
 import qualified Numeric.LinearAlgebra.HMatrix as H
