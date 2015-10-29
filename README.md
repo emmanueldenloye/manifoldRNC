@@ -25,13 +25,7 @@ This should catch everything Cairo related (guessing based on memory, didn't hav
 sudo apt-get install libghc-gtk-dev
 ```
 
-## Stack + 7.8
-
-```
-STACK_YAML=stack-7.8.yaml stack build
-```
-
-## Stack + 7.10
+## Stack + GHC 7.10
 
 ```
 stack build
