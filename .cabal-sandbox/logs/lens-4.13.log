@@ -1,0 +1,854 @@
+[1 of 1] Compiling Main             ( /tmp/cabal-tmp-13186/lens-4.13/dist/dist-sandbox-bc211410/setup/setup.hs, /tmp/cabal-tmp-13186/lens-4.13/dist/dist-sandbox-bc211410/setup/Main.o )
+Linking /tmp/cabal-tmp-13186/lens-4.13/dist/dist-sandbox-bc211410/setup/setup ...
+Configuring lens-4.13...
+Flags chosen: j=False, trustworthy=True, safe=False, test-templates=True,
+test-properties=True, test-hunit=True, test-doctests=True, test-hlint=True,
+dump-splices=False, old-inline-pragmas=False, inlining=True,
+benchmark-uniplate=False
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency base-orphans ==0.4.4: using base-orphans-0.4.4
+Dependency bifunctors ==5: using bifunctors-5
+Dependency bytestring ==0.10.6.0: using bytestring-0.10.6.0
+Dependency comonad ==4.2.7.2: using comonad-4.2.7.2
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency contravariant ==1.3.3: using contravariant-1.3.3
+Dependency distributive ==0.4.4: using distributive-0.4.4
+Dependency exceptions ==0.8.0.2: using exceptions-0.8.0.2
+Dependency filepath ==1.4.0.0: using filepath-1.4.0.0
+Dependency free ==4.12.1: using free-4.12.1
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency hashable ==1.2.3.3: using hashable-1.2.3.3
+Dependency kan-extensions ==4.2.3: using kan-extensions-4.2.3
+Dependency mtl ==2.2.1: using mtl-2.2.1
+Dependency parallel ==3.2.0.6: using parallel-3.2.0.6
+Dependency profunctors ==5.1.1: using profunctors-5.1.1
+Dependency reflection ==2.1: using reflection-2.1
+Dependency semigroupoids ==5.0.0.4: using semigroupoids-5.0.0.4
+Dependency semigroups ==0.17.0.1: using semigroups-0.17.0.1
+Dependency tagged ==0.8.1: using tagged-0.8.1
+Dependency template-haskell ==2.10.0.0: using template-haskell-2.10.0.0
+Dependency text ==1.2.1.3: using text-1.2.1.3
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency transformers-compat ==0.4.0.4: using transformers-compat-0.4.0.4
+Dependency unordered-containers ==0.2.5.1: using unordered-containers-0.2.5.1
+Dependency vector ==0.11.0.0: using vector-0.11.0.0
+Dependency void ==0.7.1: using void-0.7.1
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/lens-4.13
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/lens-4.13
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+creating dist/dist-sandbox-bc211410/build/autogen
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building lens-4.13...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library lens-4.13...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-traditional '-optP-DTRUSTWORTHY=1' -optP-DINLINING -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key lens_9a2djBByzhQCLaegMRr5W5 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id base-orphans-0.4.4-61f87fbe40b70a96b4f01742198bd89e -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id bytestring-0.10.6.0-2362d1f36f1255e85478e7793e15b170 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id filepath-1.4.0.0-8fee9c13b5e42926cc01f6aa7c403c4b -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id hashable-1.2.3.3-80550537c7909140be870afef59b4dda -package-id kan-extensions-4.2.3-24014274bd1e4fee2e3636b75856bf03 -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id parallel-3.2.0.6-1e3b7b57355fcf35c2a5d9b89c06137c -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id reflection-2.1-c963812bcf774939a9bbb4b4c136dab4 -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id text-1.2.1.3-202edba6fea901191194d38d810da662 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -package-id unordered-containers-0.2.5.1-716f4718f442df81f737706b1d02ca94 -package-id vector-0.11.0.0-a3d62f13dd9bf59f0f8bbb8613e9a160 -package-id void-0.7.1-27a9a9fd474850b6a0bb8b4a321857fb -XHaskell98 Control.Exception.Lens Control.Lens Control.Lens.At Control.Lens.Combinators Control.Lens.Cons Control.Lens.Each Control.Lens.Empty Control.Lens.Equality Control.Lens.Extras Control.Lens.Fold Control.Lens.Getter Control.Lens.Indexed Control.Lens.Internal Control.Lens.Internal.Bazaar Control.Lens.Internal.ByteString Control.Lens.Internal.Coerce Control.Lens.Internal.Context Control.Lens.Internal.Deque Control.Lens.Internal.Exception Control.Lens.Internal.FieldTH Control.Lens.Internal.PrismTH Control.Lens.Internal.Fold Control.Lens.Internal.Getter Control.Lens.Internal.Indexed Control.Lens.Internal.Instances Control.Lens.Internal.Iso Control.Lens.Internal.Level Control.Lens.Internal.List Control.Lens.Internal.Magma Control.Lens.Internal.Prism Control.Lens.Internal.Review Control.Lens.Internal.Setter Control.Lens.Internal.TH Control.Lens.Internal.Zoom Control.Lens.Iso Control.Lens.Lens Control.Lens.Level Control.Lens.Operators Control.Lens.Plated Control.Lens.Prism Control.Lens.Reified Control.Lens.Review Control.Lens.Setter Control.Lens.TH Control.Lens.Traversal Control.Lens.Tuple Control.Lens.Type Control.Lens.Wrapped Control.Lens.Zoom Control.Monad.Error.Lens Control.Parallel.Strategies.Lens Control.Seq.Lens Data.Array.Lens Data.Bits.Lens Data.ByteString.Lens Data.ByteString.Strict.Lens Data.ByteString.Lazy.Lens Data.Complex.Lens Data.Data.Lens Data.Dynamic.Lens Data.HashSet.Lens Data.IntSet.Lens Data.List.Lens Data.Map.Lens Data.Sequence.Lens Data.Set.Lens Data.Text.Lens Data.Text.Strict.Lens Data.Text.Lazy.Lens Data.Tree.Lens Data.Typeable.Lens Data.Vector.Lens Data.Vector.Generic.Lens Generics.Deriving.Lens GHC.Generics.Lens System.Exit.Lens System.FilePath.Lens System.IO.Error.Lens Language.Haskell.TH.Lens Numeric.Lens Paths_lens -Wall -fwarn-tabs -O2 -fdicts-cheap -funbox-strict-fields '-fmax-simplifier-iterations=10'
+[ 1 of 81] Compiling Paths_lens       ( dist/dist-sandbox-bc211410/build/autogen/Paths_lens.hs, dist/dist-sandbox-bc211410/build/Paths_lens.o )
+[ 2 of 81] Compiling Data.Map.Lens    ( src/Data/Map/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Map/Lens.o )
+[ 3 of 81] Compiling Control.Lens.Internal.List ( src/Control/Lens/Internal/List.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/List.o )
+[ 4 of 81] Compiling Control.Lens.Internal.TH ( src/Control/Lens/Internal/TH.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/TH.o )
+[ 5 of 81] Compiling Control.Lens.Internal.Coerce ( src/Control/Lens/Internal/Coerce.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Coerce.o )
+[ 6 of 81] Compiling Control.Lens.Internal.Instances ( src/Control/Lens/Internal/Instances.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Instances.o )
+[ 7 of 81] Compiling Control.Lens.Internal.Zoom ( src/Control/Lens/Internal/Zoom.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Zoom.o )
+[ 8 of 81] Compiling Control.Lens.Internal.Setter ( src/Control/Lens/Internal/Setter.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Setter.o )
+[ 9 of 81] Compiling Control.Lens.Internal.Review ( src/Control/Lens/Internal/Review.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Review.o )
+[10 of 81] Compiling Control.Lens.Internal.Prism ( src/Control/Lens/Internal/Prism.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Prism.o )
+[11 of 81] Compiling Control.Lens.Internal.Iso ( src/Control/Lens/Internal/Iso.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Iso.o )
+[12 of 81] Compiling Control.Lens.Internal.Level ( src/Control/Lens/Internal/Level.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Level.o )
+[13 of 81] Compiling Control.Lens.Internal.Indexed ( src/Control/Lens/Internal/Indexed.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Indexed.o )
+[14 of 81] Compiling Control.Lens.Internal.Context ( src/Control/Lens/Internal/Context.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Context.o )
+[15 of 81] Compiling Control.Lens.Internal.Bazaar ( src/Control/Lens/Internal/Bazaar.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Bazaar.o )
+[16 of 81] Compiling Control.Lens.Internal.Magma ( src/Control/Lens/Internal/Magma.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Magma.o )
+[17 of 81] Compiling Control.Lens.Internal.Getter ( src/Control/Lens/Internal/Getter.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Getter.o )
+[18 of 81] Compiling Control.Lens.Internal.Fold ( src/Control/Lens/Internal/Fold.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Fold.o )
+[19 of 81] Compiling Control.Lens.Type ( src/Control/Lens/Type.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Type.o )
+[20 of 81] Compiling Control.Lens.Setter ( src/Control/Lens/Setter.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Setter.o )
+[21 of 81] Compiling Control.Lens.Lens ( src/Control/Lens/Lens.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Lens.o )
+[22 of 81] Compiling Control.Lens.Tuple ( src/Control/Lens/Tuple.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Tuple.o )
+[23 of 81] Compiling Control.Lens.Getter ( src/Control/Lens/Getter.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Getter.o )
+[24 of 81] Compiling Control.Lens.Review ( src/Control/Lens/Review.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Review.o )
+[25 of 81] Compiling Control.Lens.Prism ( src/Control/Lens/Prism.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Prism.o )
+[26 of 81] Compiling Control.Lens.Zoom ( src/Control/Lens/Zoom.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Zoom.o )
+[27 of 81] Compiling Data.Set.Lens    ( src/Data/Set/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Set/Lens.o )
+[28 of 81] Compiling Data.HashSet.Lens ( src/Data/HashSet/Lens.hs, dist/dist-sandbox-bc211410/build/Data/HashSet/Lens.o )
+[29 of 81] Compiling Control.Lens.Fold ( src/Control/Lens/Fold.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Fold.o )
+[30 of 81] Compiling Control.Lens.Traversal ( src/Control/Lens/Traversal.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Traversal.o )
+[31 of 81] Compiling Control.Lens.Indexed ( src/Control/Lens/Indexed.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Indexed.o )
+[32 of 81] Compiling Control.Lens.Level ( src/Control/Lens/Level.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Level.o )
+[33 of 81] Compiling Control.Lens.Reified ( src/Control/Lens/Reified.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Reified.o )
+[34 of 81] Compiling Data.Data.Lens   ( src/Data/Data/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Data/Lens.o )
+[35 of 81] Compiling Control.Lens.Plated ( src/Control/Lens/Plated.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Plated.o )
+[36 of 81] Compiling Control.Lens.Internal.ByteString ( src/Control/Lens/Internal/ByteString.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/ByteString.o )
+[37 of 81] Compiling Control.Lens.Equality ( src/Control/Lens/Equality.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Equality.o )
+[38 of 81] Compiling Control.Lens.Iso ( src/Control/Lens/Iso.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Iso.o )
+[39 of 81] Compiling Control.Lens.Wrapped ( src/Control/Lens/Wrapped.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Wrapped.o )
+[40 of 81] Compiling Data.Vector.Generic.Lens ( src/Data/Vector/Generic/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Vector/Generic/Lens.o )
+[41 of 81] Compiling Data.Text.Strict.Lens ( src/Data/Text/Strict/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Text/Strict/Lens.o )
+[42 of 81] Compiling Data.Text.Lazy.Lens ( src/Data/Text/Lazy/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Text/Lazy/Lens.o )
+[43 of 81] Compiling Data.Text.Lens   ( src/Data/Text/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Text/Lens.o )
+[44 of 81] Compiling Control.Lens.Empty ( src/Control/Lens/Empty.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Empty.o )
+[45 of 81] Compiling Control.Lens.Each ( src/Control/Lens/Each.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Each.o )
+[46 of 81] Compiling Control.Lens.Cons ( src/Control/Lens/Cons.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Cons.o )
+[47 of 81] Compiling Control.Lens.Internal.Deque ( src/Control/Lens/Internal/Deque.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Deque.o )
+[48 of 81] Compiling Control.Lens.At  ( src/Control/Lens/At.hs, dist/dist-sandbox-bc211410/build/Control/Lens/At.o )
+[49 of 81] Compiling Language.Haskell.TH.Lens ( src/Language/Haskell/TH/Lens.hs, dist/dist-sandbox-bc211410/build/Language/Haskell/TH/Lens.o )
+[50 of 81] Compiling Control.Lens.Internal.FieldTH ( src/Control/Lens/Internal/FieldTH.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/FieldTH.o )
+[51 of 81] Compiling Control.Lens.Internal.PrismTH ( src/Control/Lens/Internal/PrismTH.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/PrismTH.o )
+[52 of 81] Compiling Control.Lens.TH  ( src/Control/Lens/TH.hs, dist/dist-sandbox-bc211410/build/Control/Lens/TH.o )
+[53 of 81] Compiling Control.Lens.Internal.Exception ( src/Control/Lens/Internal/Exception.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Exception.o )
+[54 of 81] Compiling Control.Lens.Internal ( src/Control/Lens/Internal.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Internal.o )
+[55 of 81] Compiling Control.Lens     ( src/Control/Lens.hs, dist/dist-sandbox-bc211410/build/Control/Lens.o )
+[56 of 81] Compiling Control.Lens.Combinators ( src/Control/Lens/Combinators.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Combinators.o )
+[57 of 81] Compiling Control.Lens.Extras ( src/Control/Lens/Extras.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Extras.o )
+[58 of 81] Compiling Control.Lens.Operators ( src/Control/Lens/Operators.hs, dist/dist-sandbox-bc211410/build/Control/Lens/Operators.o )
+[59 of 81] Compiling Control.Monad.Error.Lens ( src/Control/Monad/Error/Lens.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Error/Lens.o )
+[60 of 81] Compiling Control.Parallel.Strategies.Lens ( src/Control/Parallel/Strategies/Lens.hs, dist/dist-sandbox-bc211410/build/Control/Parallel/Strategies/Lens.o )
+[61 of 81] Compiling Control.Seq.Lens ( src/Control/Seq/Lens.hs, dist/dist-sandbox-bc211410/build/Control/Seq/Lens.o )
+[62 of 81] Compiling Data.Array.Lens  ( src/Data/Array/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Array/Lens.o )
+[63 of 81] Compiling Data.Bits.Lens   ( src/Data/Bits/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Bits/Lens.o )
+[64 of 81] Compiling Data.ByteString.Strict.Lens ( src/Data/ByteString/Strict/Lens.hs, dist/dist-sandbox-bc211410/build/Data/ByteString/Strict/Lens.o )
+[65 of 81] Compiling Data.ByteString.Lazy.Lens ( src/Data/ByteString/Lazy/Lens.hs, dist/dist-sandbox-bc211410/build/Data/ByteString/Lazy/Lens.o )
+[66 of 81] Compiling Data.ByteString.Lens ( src/Data/ByteString/Lens.hs, dist/dist-sandbox-bc211410/build/Data/ByteString/Lens.o )
+[67 of 81] Compiling Data.Complex.Lens ( src/Data/Complex/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Complex/Lens.o )
+[68 of 81] Compiling Data.IntSet.Lens ( src/Data/IntSet/Lens.hs, dist/dist-sandbox-bc211410/build/Data/IntSet/Lens.o )
+[69 of 81] Compiling Data.List.Lens   ( src/Data/List/Lens.hs, dist/dist-sandbox-bc211410/build/Data/List/Lens.o )
+[70 of 81] Compiling Data.Sequence.Lens ( src/Data/Sequence/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Sequence/Lens.o )
+[71 of 81] Compiling Data.Tree.Lens   ( src/Data/Tree/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Tree/Lens.o )
+[72 of 81] Compiling Data.Typeable.Lens ( src/Data/Typeable/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Typeable/Lens.o )
+[73 of 81] Compiling Data.Vector.Lens ( src/Data/Vector/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Vector/Lens.o )
+[74 of 81] Compiling Generics.Deriving.Lens ( src/Generics/Deriving/Lens.hs, dist/dist-sandbox-bc211410/build/Generics/Deriving/Lens.o )
+[75 of 81] Compiling GHC.Generics.Lens ( src/GHC/Generics/Lens.hs, dist/dist-sandbox-bc211410/build/GHC/Generics/Lens.o )
+[76 of 81] Compiling System.FilePath.Lens ( src/System/FilePath/Lens.hs, dist/dist-sandbox-bc211410/build/System/FilePath/Lens.o )
+[77 of 81] Compiling System.IO.Error.Lens ( src/System/IO/Error/Lens.hs, dist/dist-sandbox-bc211410/build/System/IO/Error/Lens.o )
+[78 of 81] Compiling Numeric.Lens     ( src/Numeric/Lens.hs, dist/dist-sandbox-bc211410/build/Numeric/Lens.o )
+[79 of 81] Compiling Control.Exception.Lens ( src/Control/Exception/Lens.hs, dist/dist-sandbox-bc211410/build/Control/Exception/Lens.o )
+[80 of 81] Compiling Data.Dynamic.Lens ( src/Data/Dynamic/Lens.hs, dist/dist-sandbox-bc211410/build/Data/Dynamic/Lens.o )
+[81 of 81] Compiling System.Exit.Lens ( src/System/Exit/Lens.hs, dist/dist-sandbox-bc211410/build/System/Exit/Lens.o )
+Linking...
+[(InstalledPackageId
+"array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-orphans-0.4.4-61f87fbe40b70a96b4f01742198bd89e",PackageIdentifier
+{pkgName = PackageName {unPackageName = "base-orphans"}, pkgVersion = Version
+{versionBranch = [0,4,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"bifunctors-5-06680d8819c4b9bbf1676ae1390767b5",PackageIdentifier {pkgName =
+PackageName {unPackageName = "bifunctors"}, pkgVersion = Version
+{versionBranch = [5], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"bytestring-0.10.6.0-2362d1f36f1255e85478e7793e15b170",PackageIdentifier
+{pkgName = PackageName {unPackageName = "bytestring"}, pkgVersion = Version
+{versionBranch = [0,10,6,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b",PackageIdentifier {pkgName
+= PackageName {unPackageName = "comonad"}, pkgVersion = Version {versionBranch
+= [4,2,7,2], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"containers-0.5.6.2-2de75421d746ab474b330e43191bb31b",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157",PackageIdentifier
+{pkgName = PackageName {unPackageName = "contravariant"}, pkgVersion = Version
+{versionBranch = [1,3,3], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1",PackageIdentifier
+{pkgName = PackageName {unPackageName = "distributive"}, pkgVersion = Version
+{versionBranch = [0,4,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd",PackageIdentifier
+{pkgName = PackageName {unPackageName = "exceptions"}, pkgVersion = Version
+{versionBranch = [0,8,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"filepath-1.4.0.0-8fee9c13b5e42926cc01f6aa7c403c4b",PackageIdentifier {pkgName
+= PackageName {unPackageName = "filepath"}, pkgVersion = Version
+{versionBranch = [1,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae",PackageIdentifier {pkgName =
+PackageName {unPackageName = "free"}, pkgVersion = Version {versionBranch =
+[4,12,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"hashable-1.2.3.3-80550537c7909140be870afef59b4dda",PackageIdentifier {pkgName
+= PackageName {unPackageName = "hashable"}, pkgVersion = Version
+{versionBranch = [1,2,3,3], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"kan-extensions-4.2.3-24014274bd1e4fee2e3636b75856bf03",PackageIdentifier
+{pkgName = PackageName {unPackageName = "kan-extensions"}, pkgVersion =
+Version {versionBranch = [4,2,3], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mtl"}, pkgVersion = Version {versionBranch =
+[2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"parallel-3.2.0.6-1e3b7b57355fcf35c2a5d9b89c06137c",PackageIdentifier {pkgName
+= PackageName {unPackageName = "parallel"}, pkgVersion = Version
+{versionBranch = [3,2,0,6], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d",PackageIdentifier
+{pkgName = PackageName {unPackageName = "profunctors"}, pkgVersion = Version
+{versionBranch = [5,1,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"reflection-2.1-c963812bcf774939a9bbb4b4c136dab4",PackageIdentifier {pkgName =
+PackageName {unPackageName = "reflection"}, pkgVersion = Version
+{versionBranch = [2,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroupoids"}, pkgVersion = Version
+{versionBranch = [5,0,0,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroups"}, pkgVersion = Version
+{versionBranch = [0,17,0,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28",PackageIdentifier
+{pkgName = PackageName {unPackageName = "template-haskell"}, pkgVersion =
+Version {versionBranch = [2,10,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"text-1.2.1.3-202edba6fea901191194d38d810da662",PackageIdentifier {pkgName =
+PackageName {unPackageName = "text"}, pkgVersion = Version {versionBranch =
+[1,2,1,3], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers-compat"}, pkgVersion =
+Version {versionBranch = [0,4,0,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"unordered-containers-0.2.5.1-716f4718f442df81f737706b1d02ca94",PackageIdentifier
+{pkgName = PackageName {unPackageName = "unordered-containers"}, pkgVersion =
+Version {versionBranch = [0,2,5,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"vector-0.11.0.0-a3d62f13dd9bf59f0f8bbb8613e9a160",PackageIdentifier {pkgName
+= PackageName {unPackageName = "vector"}, pkgVersion = Version {versionBranch
+= [0,11,0,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"void-0.7.1-27a9a9fd474850b6a0bb8b4a321857fb",PackageIdentifier {pkgName =
+PackageName {unPackageName = "void"}, pkgVersion = Version {versionBranch =
+[0,7,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-18610/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5.a dist/dist-sandbox-bc211410/build/Control/Exception/Lens.o dist/dist-sandbox-bc211410/build/Control/Lens.o dist/dist-sandbox-bc211410/build/Control/Lens/At.o dist/dist-sandbox-bc211410/build/Control/Lens/Combinators.o dist/dist-sandbox-bc211410/build/Control/Lens/Cons.o dist/dist-sandbox-bc211410/build/Control/Lens/Each.o dist/dist-sandbox-bc211410/build/Control/Lens/Empty.o dist/dist-sandbox-bc211410/build/Control/Lens/Equality.o dist/dist-sandbox-bc211410/build/Control/Lens/Extras.o dist/dist-sandbox-bc211410/build/Control/Lens/Fold.o dist/dist-sandbox-bc211410/build/Control/Lens/Getter.o dist/dist-sandbox-bc211410/build/Control/Lens/Indexed.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Bazaar.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/ByteString.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Coerce.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Context.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Deque.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Exception.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/FieldTH.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/PrismTH.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Fold.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Getter.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Indexed.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Instances.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Iso.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Level.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/List.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Magma.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Prism.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Review.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Setter.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/TH.o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Zoom.o dist/dist-sandbox-bc211410/build/Control/Lens/Iso.o dist/dist-sandbox-bc211410/build/Control/Lens/Lens.o dist/dist-sandbox-bc211410/build/Control/Lens/Level.o dist/dist-sandbox-bc211410/build/Control/Lens/Operators.o dist/dist-sandbox-bc211410/build/Control/Lens/Plated.o dist/dist-sandbox-bc211410/build/Control/Lens/Prism.o dist/dist-sandbox-bc211410/build/Control/Lens/Reified.o dist/dist-sandbox-bc211410/build/Control/Lens/Review.o dist/dist-sandbox-bc211410/build/Control/Lens/Setter.o dist/dist-sandbox-bc211410/build/Control/Lens/TH.o dist/dist-sandbox-bc211410/build/Control/Lens/Traversal.o dist/dist-sandbox-bc211410/build/Control/Lens/Tuple.o dist/dist-sandbox-bc211410/build/Control/Lens/Type.o dist/dist-sandbox-bc211410/build/Control/Lens/Wrapped.o dist/dist-sandbox-bc211410/build/Control/Lens/Zoom.o dist/dist-sandbox-bc211410/build/Control/Monad/Error/Lens.o dist/dist-sandbox-bc211410/build/Control/Parallel/Strategies/Lens.o dist/dist-sandbox-bc211410/build/Control/Seq/Lens.o dist/dist-sandbox-bc211410/build/Data/Array/Lens.o dist/dist-sandbox-bc211410/build/Data/Bits/Lens.o dist/dist-sandbox-bc211410/build/Data/ByteString/Lens.o dist/dist-sandbox-bc211410/build/Data/ByteString/Strict/Lens.o dist/dist-sandbox-bc211410/build/Data/ByteString/Lazy/Lens.o dist/dist-sandbox-bc211410/build/Data/Complex/Lens.o dist/dist-sandbox-bc211410/build/Data/Data/Lens.o dist/dist-sandbox-bc211410/build/Data/Dynamic/Lens.o dist/dist-sandbox-bc211410/build/Data/HashSet/Lens.o dist/dist-sandbox-bc211410/build/Data/IntSet/Lens.o dist/dist-sandbox-bc211410/build/Data/List/Lens.o dist/dist-sandbox-bc211410/build/Data/Map/Lens.o dist/dist-sandbox-bc211410/build/Data/Sequence/Lens.o dist/dist-sandbox-bc211410/build/Data/Set/Lens.o dist/dist-sandbox-bc211410/build/Data/Text/Lens.o dist/dist-sandbox-bc211410/build/Data/Text/Strict/Lens.o dist/dist-sandbox-bc211410/build/Data/Text/Lazy/Lens.o dist/dist-sandbox-bc211410/build/Data/Tree/Lens.o dist/dist-sandbox-bc211410/build/Data/Typeable/Lens.o dist/dist-sandbox-bc211410/build/Data/Vector/Lens.o dist/dist-sandbox-bc211410/build/Data/Vector/Generic/Lens.o dist/dist-sandbox-bc211410/build/Generics/Deriving/Lens.o dist/dist-sandbox-bc211410/build/GHC/Generics/Lens.o dist/dist-sandbox-bc211410/build/System/Exit/Lens.o dist/dist-sandbox-bc211410/build/System/FilePath/Lens.o dist/dist-sandbox-bc211410/build/System/IO/Error/Lens.o dist/dist-sandbox-bc211410/build/Language/Haskell/TH/Lens.o dist/dist-sandbox-bc211410/build/Numeric/Lens.o dist/dist-sandbox-bc211410/build/Paths_lens.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-18610/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-18610/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/StateVar-1.1.0.1-6K4a3UqSdqh6lGAm1wlr9s -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/adjunctions-4.2.2-JV35obEa2gxDMp9QpaNrGL -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/base-orphans-0.4.4-E55c3OEBLyu45sND7mOuE9 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/binar_IvYoLp9H6Xy3zEH13MmZwd -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/bytes_6elQVSg5cWdFrvRnfxTUrH -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/comonad-4.2.7.2-BggM6Z4XCUeHVlPwhbJP28 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/conta_LKCPrTJwOTOLk4OU37YmeN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/contravariant-1.3.3-6YXCrIazFLhDoYkGeQkZZL -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/exceptions-0.8.0.2-8GsEeHgaIks3pVGk6GaELJ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/filep_KsGE6pHE5eZHSN90ZVax6A -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/hashable-1.2.3.3-2GTZqecVp8NJZrNuKzGxfy -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/site-local/mtl-2.2.1 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/parallel-3.2.0.6-6L9FbzO2lwB9ZhSC6B30xj -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/prelude-extras-0.4.0.2-57eavILAbKD5CaKv31zEDY -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/prett_7UQTOB05U7lIYPkFOVraeR -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/primitive-0.6.1.0-5Jnw7oEuYtM9dmKXelGXVb -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/profunctors-5.1.1-6VYMPItTJb46h1RTnXn5Hg -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroupoids-5.0.0.4-BW6xw8pFrWDHWU5GlvdG4W -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroups-0.17.0.1-7ZJSgZ5CNVm8tWmGAujY46 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/stm-2.4.4-C1kFMnPqFjvDhFjgMZGUpr -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/tagged-0.8.1-6Tf46oJAk552xT73wGffBW -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/templ_1ejK907jvoTHoZ6iZtHeyN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/text-1.2.1.3-1l1AN4I48k37RaQ6fm6CEh -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/trans_3eG64VdP2vzGjP6wJiCp5X -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/transformers-compat-0.4.0.4-DCQioW2d4vYEa3T0AmFBPv -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/unordered-containers-0.2.5.1-7E41cj9RvqSJeZ4jSnbs1a -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/vector-0.11.0.0-A9qWf1eecPQGJD12EBZIxF -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/void-0.7.1-9yhpMnPXpwdEXb0fUkPcv6 -this-package-key lens_9a2djBByzhQCLaegMRr5W5 -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id base-orphans-0.4.4-61f87fbe40b70a96b4f01742198bd89e -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id bytestring-0.10.6.0-2362d1f36f1255e85478e7793e15b170 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id filepath-1.4.0.0-8fee9c13b5e42926cc01f6aa7c403c4b -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id hashable-1.2.3.3-80550537c7909140be870afef59b4dda -package-id kan-extensions-4.2.3-24014274bd1e4fee2e3636b75856bf03 -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id parallel-3.2.0.6-1e3b7b57355fcf35c2a5d9b89c06137c -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id reflection-2.1-c963812bcf774939a9bbb4b4c136dab4 -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id text-1.2.1.3-202edba6fea901191194d38d810da662 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -package-id unordered-containers-0.2.5.1-716f4718f442df81f737706b1d02ca94 -package-id vector-0.11.0.0-a3d62f13dd9bf59f0f8bbb8613e9a160 -package-id void-0.7.1-27a9a9fd474850b6a0bb8b4a321857fb dist/dist-sandbox-bc211410/build/Control/Exception/Lens.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/At.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Combinators.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Cons.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Each.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Empty.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Equality.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Extras.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Fold.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Getter.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Indexed.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Bazaar.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/ByteString.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Coerce.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Context.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Deque.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Exception.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/FieldTH.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/PrismTH.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Fold.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Getter.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Indexed.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Instances.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Iso.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Level.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/List.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Magma.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Prism.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Review.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Setter.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/TH.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Zoom.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Iso.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Lens.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Level.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Operators.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Plated.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Prism.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Reified.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Review.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Setter.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/TH.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Traversal.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Tuple.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Type.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Wrapped.dyn_o dist/dist-sandbox-bc211410/build/Control/Lens/Zoom.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Error/Lens.dyn_o dist/dist-sandbox-bc211410/build/Control/Parallel/Strategies/Lens.dyn_o dist/dist-sandbox-bc211410/build/Control/Seq/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Array/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Bits/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/ByteString/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/ByteString/Strict/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/ByteString/Lazy/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Complex/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Data/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Dynamic/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/HashSet/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/IntSet/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/List/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Map/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Sequence/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Set/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Text/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Text/Strict/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Text/Lazy/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Tree/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Typeable/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Vector/Lens.dyn_o dist/dist-sandbox-bc211410/build/Data/Vector/Generic/Lens.dyn_o dist/dist-sandbox-bc211410/build/Generics/Deriving/Lens.dyn_o dist/dist-sandbox-bc211410/build/GHC/Generics/Lens.dyn_o dist/dist-sandbox-bc211410/build/System/Exit/Lens.dyn_o dist/dist-sandbox-bc211410/build/System/FilePath/Lens.dyn_o dist/dist-sandbox-bc211410/build/System/IO/Error/Lens.dyn_o dist/dist-sandbox-bc211410/build/Language/Haskell/TH/Lens.dyn_o dist/dist-sandbox-bc211410/build/Numeric/Lens.dyn_o dist/dist-sandbox-bc211410/build/Paths_lens.dyn_o -o dist/dist-sandbox-bc211410/build/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5-ghc7.10.2.so
+In-place registering lens-4.13...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-traditional '-optP-DTRUSTWORTHY=1' -optP-DINLINING -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key lens_9a2djBByzhQCLaegMRr5W5 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id base-orphans-0.4.4-61f87fbe40b70a96b4f01742198bd89e -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id bytestring-0.10.6.0-2362d1f36f1255e85478e7793e15b170 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id filepath-1.4.0.0-8fee9c13b5e42926cc01f6aa7c403c4b -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id hashable-1.2.3.3-80550537c7909140be870afef59b4dda -package-id kan-extensions-4.2.3-24014274bd1e4fee2e3636b75856bf03 -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id parallel-3.2.0.6-1e3b7b57355fcf35c2a5d9b89c06137c -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id reflection-2.1-c963812bcf774939a9bbb4b4c136dab4 -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id text-1.2.1.3-202edba6fea901191194d38d810da662 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -package-id unordered-containers-0.2.5.1-716f4718f442df81f737706b1d02ca94 -package-id vector-0.11.0.0-a3d62f13dd9bf59f0f8bbb8613e9a160 -package-id void-0.7.1-27a9a9fd474850b6a0bb8b4a321857fb -XHaskell98 Control.Exception.Lens Control.Lens Control.Lens.At Control.Lens.Combinators Control.Lens.Cons Control.Lens.Each Control.Lens.Empty Control.Lens.Equality Control.Lens.Extras Control.Lens.Fold Control.Lens.Getter Control.Lens.Indexed Control.Lens.Internal Control.Lens.Internal.Bazaar Control.Lens.Internal.ByteString Control.Lens.Internal.Coerce Control.Lens.Internal.Context Control.Lens.Internal.Deque Control.Lens.Internal.Exception Control.Lens.Internal.FieldTH Control.Lens.Internal.PrismTH Control.Lens.Internal.Fold Control.Lens.Internal.Getter Control.Lens.Internal.Indexed Control.Lens.Internal.Instances Control.Lens.Internal.Iso Control.Lens.Internal.Level Control.Lens.Internal.List Control.Lens.Internal.Magma Control.Lens.Internal.Prism Control.Lens.Internal.Review Control.Lens.Internal.Setter Control.Lens.Internal.TH Control.Lens.Internal.Zoom Control.Lens.Iso Control.Lens.Lens Control.Lens.Level Control.Lens.Operators Control.Lens.Plated Control.Lens.Prism Control.Lens.Reified Control.Lens.Review Control.Lens.Setter Control.Lens.TH Control.Lens.Traversal Control.Lens.Tuple Control.Lens.Type Control.Lens.Wrapped Control.Lens.Zoom Control.Monad.Error.Lens Control.Parallel.Strategies.Lens Control.Seq.Lens Data.Array.Lens Data.Bits.Lens Data.ByteString.Lens Data.ByteString.Strict.Lens Data.ByteString.Lazy.Lens Data.Complex.Lens Data.Data.Lens Data.Dynamic.Lens Data.HashSet.Lens Data.IntSet.Lens Data.List.Lens Data.Map.Lens Data.Sequence.Lens Data.Set.Lens Data.Text.Lens Data.Text.Strict.Lens Data.Text.Lazy.Lens Data.Tree.Lens Data.Typeable.Lens Data.Vector.Lens Data.Vector.Generic.Lens Generics.Deriving.Lens GHC.Generics.Lens System.Exit.Lens System.FilePath.Lens System.IO.Error.Lens Language.Haskell.TH.Lens Numeric.Lens -Wall -fwarn-tabs -O2 -fdicts-cheap -funbox-strict-fields '-fmax-simplifier-iterations=10'
+Creating package registration file: /tmp/pkgConf-lens-41395235128532670688.13
+directory dist/dist-sandbox-bc211410/doc/html/lens does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/lens-4.13
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/lens-4.13/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Exception
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Exception
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Monad/Error
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Monad/Error
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Parallel/Strategies
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Parallel
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Parallel/Strategies
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Seq
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Array
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Array
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Bits
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Strict
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Lazy
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Complex
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Dynamic
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/HashSet
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/IntSet
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/List
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Map
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Sequence
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Set
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Strict
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Lazy
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Tree
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Typeable
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector/Generic
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Generics/Deriving
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Generics
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Generics/Deriving
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/GHC/Generics
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/GHC
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/GHC/Generics
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/Exit
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/Exit
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/FilePath
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/IO/Error
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/IO
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/IO/Error
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell/TH
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell/TH
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Numeric
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+Installing dist/dist-sandbox-bc211410/build/Control/Exception/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Exception/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/At.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/At.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Combinators.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Combinators.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Cons.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Cons.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Each.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Each.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Empty.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Empty.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Equality.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Equality.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Extras.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Extras.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Fold.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Fold.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Getter.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Getter.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Indexed.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Indexed.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Bazaar.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Bazaar.hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/ByteString.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/ByteString.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Coerce.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Coerce.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Context.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Context.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Deque.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Deque.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Exception.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Exception.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/FieldTH.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/FieldTH.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/PrismTH.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/PrismTH.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Fold.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Fold.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Getter.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Getter.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Indexed.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Indexed.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Instances.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Instances.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Iso.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Iso.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Level.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Level.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/List.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/List.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Magma.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Magma.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Prism.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Prism.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Review.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Review.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Setter.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Setter.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/TH.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/TH.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Zoom.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Zoom.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Iso.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Iso.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Level.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Level.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Operators.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Operators.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Plated.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Plated.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Prism.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Prism.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Reified.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Reified.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Review.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Review.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Setter.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Setter.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/TH.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/TH.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Traversal.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Traversal.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Tuple.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Tuple.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Type.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Type.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Wrapped.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Wrapped.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Zoom.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Zoom.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Error/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Monad/Error/Lens.hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Parallel/Strategies/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Parallel/Strategies/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Seq/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Seq/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Array/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Array/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bits/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Bits/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/ByteString/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/ByteString/Strict/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Strict/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/ByteString/Lazy/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Lazy/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Complex/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Complex/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Data/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Data/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Dynamic/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Dynamic/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/HashSet/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/HashSet/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/IntSet/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/IntSet/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/List/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/List/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Map/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Map/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Sequence/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Sequence/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Set/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Set/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Text/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Text/Strict/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Strict/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Text/Lazy/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Lazy/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Tree/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Tree/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Typeable/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Typeable/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Vector/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Vector/Generic/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector/Generic/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Generics/Deriving/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Generics/Deriving/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/GHC/Generics/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/GHC/Generics/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/System/Exit/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/Exit/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/System/FilePath/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/FilePath/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/System/IO/Error/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/IO/Error/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Language/Haskell/TH/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell/TH/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Numeric/Lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Numeric/Lens.hi
+Installing dist/dist-sandbox-bc211410/build/Paths_lens.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Paths_lens.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Exception
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Monad/Error
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Parallel/Strategies
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Seq
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Array
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Bits
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Strict
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Lazy
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Complex
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Dynamic
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/HashSet
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/IntSet
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/List
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Map
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Sequence
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Set
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Strict
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Lazy
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Tree
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Typeable
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector/Generic
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Generics/Deriving
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/GHC/Generics
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/Exit
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/FilePath
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/IO/Error
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell/TH
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Numeric
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+Installing dist/dist-sandbox-bc211410/build/Control/Exception/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Exception/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/At.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/At.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Combinators.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Combinators.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Cons.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Cons.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Each.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Each.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Empty.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Empty.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Equality.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Equality.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Extras.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Extras.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Fold.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Fold.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Getter.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Getter.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Indexed.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Indexed.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Bazaar.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Bazaar.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/ByteString.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/ByteString.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Coerce.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Coerce.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Context.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Context.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Deque.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Deque.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Exception.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Exception.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/FieldTH.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/FieldTH.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/PrismTH.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/PrismTH.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Fold.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Fold.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Getter.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Getter.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Indexed.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Indexed.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Instances.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Instances.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Iso.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Iso.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Level.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Level.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/List.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/List.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Magma.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Magma.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Prism.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Prism.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Review.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Review.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Setter.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Setter.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/TH.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/TH.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Internal/Zoom.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Internal/Zoom.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Iso.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Iso.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Level.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Level.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Operators.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Operators.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Plated.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Plated.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Prism.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Prism.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Reified.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Reified.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Review.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Review.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Setter.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Setter.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/TH.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/TH.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Traversal.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Traversal.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Tuple.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Tuple.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Type.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Type.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Wrapped.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Wrapped.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Lens/Zoom.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Lens/Zoom.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Error/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Monad/Error/Lens.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Parallel/Strategies/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Parallel/Strategies/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Seq/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Control/Seq/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Array/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Array/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bits/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Bits/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/ByteString/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/ByteString/Strict/Lens.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Strict/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/ByteString/Lazy/Lens.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/ByteString/Lazy/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Complex/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Complex/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Data/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Data/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Dynamic/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Dynamic/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/HashSet/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/HashSet/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/IntSet/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/IntSet/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/List/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/List/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Map/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Map/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Sequence/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Sequence/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Set/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Set/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Text/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Text/Strict/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Strict/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Text/Lazy/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Text/Lazy/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Tree/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Tree/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Typeable/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Typeable/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Vector/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Vector/Generic/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Data/Vector/Generic/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Generics/Deriving/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Generics/Deriving/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/GHC/Generics/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/GHC/Generics/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/System/Exit/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/Exit/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/System/FilePath/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/FilePath/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/System/IO/Error/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/System/IO/Error/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Language/Haskell/TH/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Language/Haskell/TH/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Numeric/Lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Numeric/Lens.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Paths_lens.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/Paths_lens.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+Installing
+dist/dist-sandbox-bc211410/build/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5.a to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/lens-4.13-9a2djBByzhQCLaegMRr5W5/libHSlens-4.13-9a2djBByzhQCLaegMRr5W5-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-traditional '-optP-DTRUSTWORTHY=1' -optP-DINLINING -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key lens_9a2djBByzhQCLaegMRr5W5 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id base-orphans-0.4.4-61f87fbe40b70a96b4f01742198bd89e -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id bytestring-0.10.6.0-2362d1f36f1255e85478e7793e15b170 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id filepath-1.4.0.0-8fee9c13b5e42926cc01f6aa7c403c4b -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id hashable-1.2.3.3-80550537c7909140be870afef59b4dda -package-id kan-extensions-4.2.3-24014274bd1e4fee2e3636b75856bf03 -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id parallel-3.2.0.6-1e3b7b57355fcf35c2a5d9b89c06137c -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id reflection-2.1-c963812bcf774939a9bbb4b4c136dab4 -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id text-1.2.1.3-202edba6fea901191194d38d810da662 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -package-id unordered-containers-0.2.5.1-716f4718f442df81f737706b1d02ca94 -package-id vector-0.11.0.0-a3d62f13dd9bf59f0f8bbb8613e9a160 -package-id void-0.7.1-27a9a9fd474850b6a0bb8b4a321857fb -XHaskell98 Control.Exception.Lens Control.Lens Control.Lens.At Control.Lens.Combinators Control.Lens.Cons Control.Lens.Each Control.Lens.Empty Control.Lens.Equality Control.Lens.Extras Control.Lens.Fold Control.Lens.Getter Control.Lens.Indexed Control.Lens.Internal Control.Lens.Internal.Bazaar Control.Lens.Internal.ByteString Control.Lens.Internal.Coerce Control.Lens.Internal.Context Control.Lens.Internal.Deque Control.Lens.Internal.Exception Control.Lens.Internal.FieldTH Control.Lens.Internal.PrismTH Control.Lens.Internal.Fold Control.Lens.Internal.Getter Control.Lens.Internal.Indexed Control.Lens.Internal.Instances Control.Lens.Internal.Iso Control.Lens.Internal.Level Control.Lens.Internal.List Control.Lens.Internal.Magma Control.Lens.Internal.Prism Control.Lens.Internal.Review Control.Lens.Internal.Setter Control.Lens.Internal.TH Control.Lens.Internal.Zoom Control.Lens.Iso Control.Lens.Lens Control.Lens.Level Control.Lens.Operators Control.Lens.Plated Control.Lens.Prism Control.Lens.Reified Control.Lens.Review Control.Lens.Setter Control.Lens.TH Control.Lens.Traversal Control.Lens.Tuple Control.Lens.Type Control.Lens.Wrapped Control.Lens.Zoom Control.Monad.Error.Lens Control.Parallel.Strategies.Lens Control.Seq.Lens Data.Array.Lens Data.Bits.Lens Data.ByteString.Lens Data.ByteString.Strict.Lens Data.ByteString.Lazy.Lens Data.Complex.Lens Data.Data.Lens Data.Dynamic.Lens Data.HashSet.Lens Data.IntSet.Lens Data.List.Lens Data.Map.Lens Data.Sequence.Lens Data.Set.Lens Data.Text.Lens Data.Text.Strict.Lens Data.Text.Lazy.Lens Data.Tree.Lens Data.Typeable.Lens Data.Vector.Lens Data.Vector.Generic.Lens Generics.Deriving.Lens GHC.Generics.Lens System.Exit.Lens System.FilePath.Lens System.IO.Error.Lens Language.Haskell.TH.Lens Numeric.Lens -Wall -fwarn-tabs -O2 -fdicts-cheap -funbox-strict-fields '-fmax-simplifier-iterations=10'
+Registering lens-4.13...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'

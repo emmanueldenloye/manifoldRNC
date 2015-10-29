@@ -1,0 +1,110 @@
+Configuring reflection-2.1...
+Flags chosen: template-haskell=True, slow=False
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency template-haskell ==2.10.0.0: using template-haskell-2.10.0.0
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/reflection-2.1
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/reflection-2.1
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building reflection-2.1...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library reflection-2.1...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -ifast -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key refle_2R8D1icnYri0V2GprJlDMF -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -XHaskell98 -XTrustworthy Data.Reflection -Wall
+[1 of 1] Compiling Data.Reflection  ( fast/Data/Reflection.hs, dist/dist-sandbox-bc211410/build/Data/Reflection.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28",PackageIdentifier
+{pkgName = PackageName {unPackageName = "template-haskell"}, pkgVersion =
+Version {versionBranch = [2,10,0,0], versionTags = []}},ModuleRenaming True
+[])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-14225/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF.a dist/dist-sandbox-bc211410/build/Data/Reflection.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-14225/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-14225/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/prett_7UQTOB05U7lIYPkFOVraeR -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/templ_1ejK907jvoTHoZ6iZtHeyN -this-package-key refle_2R8D1icnYri0V2GprJlDMF -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 dist/dist-sandbox-bc211410/build/Data/Reflection.dyn_o -o dist/dist-sandbox-bc211410/build/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF-ghc7.10.2.so
+In-place registering reflection-2.1...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -ifast -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key refle_2R8D1icnYri0V2GprJlDMF -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -XHaskell98 -XTrustworthy Data.Reflection -Wall
+Creating package registration file:
+/tmp/pkgConf-reflection-24917054031918502651.1
+directory dist/dist-sandbox-bc211410/doc/html/reflection does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/reflection-2.1
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/reflection-2.1/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/Data
+Installing dist/dist-sandbox-bc211410/build/Data/Reflection.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/Data/Reflection.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/Data
+Installing dist/dist-sandbox-bc211410/build/Data/Reflection.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/Data/Reflection.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF
+Installing
+dist/dist-sandbox-bc211410/build/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF.a
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/reflection-2.1-2R8D1icnYri0V2GprJlDMF/libHSreflection-2.1-2R8D1icnYri0V2GprJlDMF-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -ifast -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key refle_2R8D1icnYri0V2GprJlDMF -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -XHaskell98 -XTrustworthy Data.Reflection -Wall
+Registering reflection-2.1...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'

@@ -1,0 +1,247 @@
+Configuring kan-extensions-4.2.3...
+Dependency adjunctions ==4.2.2: using adjunctions-4.2.2
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency comonad ==4.2.7.2: using comonad-4.2.7.2
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency contravariant ==1.3.3: using contravariant-1.3.3
+Dependency distributive ==0.4.4: using distributive-0.4.4
+Dependency free ==4.12.1: using free-4.12.1
+Dependency mtl ==2.2.1: using mtl-2.2.1
+Dependency semigroupoids ==5.0.0.4: using semigroupoids-5.0.0.4
+Dependency tagged ==0.8.1: using tagged-0.8.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building kan-extensions-4.2.3...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library kan-extensions-4.2.3...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key kanex_AZ1z1CuYG3UJ3G7vJTiBt5 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id adjunctions-4.2.2-e24684cc5cb0c97ba9752746e37d1b8c -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell98 Control.Comonad.Density Control.Monad.Co Control.Monad.Codensity Data.Functor.Contravariant.Day Data.Functor.Contravariant.Yoneda Data.Functor.Contravariant.Coyoneda Data.Functor.Day Data.Functor.Kan.Lan Data.Functor.Kan.Lift Data.Functor.Kan.Ran Data.Functor.Kan.Rift Data.Functor.Yoneda Data.Functor.Coyoneda -Wall
+[ 1 of 13] Compiling Data.Functor.Kan.Rift ( src/Data/Functor/Kan/Rift.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Rift.o )
+[ 2 of 13] Compiling Data.Functor.Kan.Lift ( src/Data/Functor/Kan/Lift.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lift.o )
+[ 3 of 13] Compiling Data.Functor.Day ( src/Data/Functor/Day.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Day.o )
+[ 4 of 13] Compiling Data.Functor.Contravariant.Coyoneda ( src/Data/Functor/Contravariant/Coyoneda.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Coyoneda.o )
+[ 5 of 13] Compiling Data.Functor.Contravariant.Yoneda ( src/Data/Functor/Contravariant/Yoneda.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Yoneda.o )
+[ 6 of 13] Compiling Data.Functor.Contravariant.Day ( src/Data/Functor/Contravariant/Day.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Day.o )
+[ 7 of 13] Compiling Data.Functor.Kan.Ran ( src/Data/Functor/Kan/Ran.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Ran.o )
+[ 8 of 13] Compiling Data.Functor.Yoneda ( src/Data/Functor/Yoneda.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Yoneda.o )
+[ 9 of 13] Compiling Control.Monad.Codensity ( src/Control/Monad/Codensity.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Codensity.o )
+[10 of 13] Compiling Data.Functor.Kan.Lan ( src/Data/Functor/Kan/Lan.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lan.o )
+[11 of 13] Compiling Data.Functor.Coyoneda ( src/Data/Functor/Coyoneda.hs, dist/dist-sandbox-bc211410/build/Data/Functor/Coyoneda.o )
+[12 of 13] Compiling Control.Comonad.Density ( src/Control/Comonad/Density.hs, dist/dist-sandbox-bc211410/build/Control/Comonad/Density.o )
+[13 of 13] Compiling Control.Monad.Co ( src/Control/Monad/Co.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Co.o )
+Linking...
+[(InstalledPackageId
+"adjunctions-4.2.2-e24684cc5cb0c97ba9752746e37d1b8c",PackageIdentifier
+{pkgName = PackageName {unPackageName = "adjunctions"}, pkgVersion = Version
+{versionBranch = [4,2,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b",PackageIdentifier {pkgName
+= PackageName {unPackageName = "comonad"}, pkgVersion = Version {versionBranch
+= [4,2,7,2], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"containers-0.5.6.2-2de75421d746ab474b330e43191bb31b",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157",PackageIdentifier
+{pkgName = PackageName {unPackageName = "contravariant"}, pkgVersion = Version
+{versionBranch = [1,3,3], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1",PackageIdentifier
+{pkgName = PackageName {unPackageName = "distributive"}, pkgVersion = Version
+{versionBranch = [0,4,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae",PackageIdentifier {pkgName =
+PackageName {unPackageName = "free"}, pkgVersion = Version {versionBranch =
+[4,12,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mtl"}, pkgVersion = Version {versionBranch =
+[2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroupoids"}, pkgVersion = Version
+{versionBranch = [5,0,0,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-18404/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5.a dist/dist-sandbox-bc211410/build/Control/Comonad/Density.o dist/dist-sandbox-bc211410/build/Control/Monad/Co.o dist/dist-sandbox-bc211410/build/Control/Monad/Codensity.o dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Day.o dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Yoneda.o dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Coyoneda.o dist/dist-sandbox-bc211410/build/Data/Functor/Day.o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lan.o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lift.o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Ran.o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Rift.o dist/dist-sandbox-bc211410/build/Data/Functor/Yoneda.o dist/dist-sandbox-bc211410/build/Data/Functor/Coyoneda.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-18404/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-18404/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/StateVar-1.1.0.1-6K4a3UqSdqh6lGAm1wlr9s -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/adjunctions-4.2.2-JV35obEa2gxDMp9QpaNrGL -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/base-orphans-0.4.4-E55c3OEBLyu45sND7mOuE9 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/binar_IvYoLp9H6Xy3zEH13MmZwd -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/bytes_6elQVSg5cWdFrvRnfxTUrH -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/comonad-4.2.7.2-BggM6Z4XCUeHVlPwhbJP28 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/conta_LKCPrTJwOTOLk4OU37YmeN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/contravariant-1.3.3-6YXCrIazFLhDoYkGeQkZZL -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/exceptions-0.8.0.2-8GsEeHgaIks3pVGk6GaELJ -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/hashable-1.2.3.3-2GTZqecVp8NJZrNuKzGxfy -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/site-local/mtl-2.2.1 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/prelude-extras-0.4.0.2-57eavILAbKD5CaKv31zEDY -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/prett_7UQTOB05U7lIYPkFOVraeR -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/profunctors-5.1.1-6VYMPItTJb46h1RTnXn5Hg -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroupoids-5.0.0.4-BW6xw8pFrWDHWU5GlvdG4W -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroups-0.17.0.1-7ZJSgZ5CNVm8tWmGAujY46 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/stm-2.4.4-C1kFMnPqFjvDhFjgMZGUpr -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/tagged-0.8.1-6Tf46oJAk552xT73wGffBW -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/templ_1ejK907jvoTHoZ6iZtHeyN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/text-1.2.1.3-1l1AN4I48k37RaQ6fm6CEh -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/trans_3eG64VdP2vzGjP6wJiCp5X -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/transformers-compat-0.4.0.4-DCQioW2d4vYEa3T0AmFBPv -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/unordered-containers-0.2.5.1-7E41cj9RvqSJeZ4jSnbs1a -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/void-0.7.1-9yhpMnPXpwdEXb0fUkPcv6 -this-package-key kanex_AZ1z1CuYG3UJ3G7vJTiBt5 -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id adjunctions-4.2.2-e24684cc5cb0c97ba9752746e37d1b8c -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff dist/dist-sandbox-bc211410/build/Control/Comonad/Density.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Co.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Codensity.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Day.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Yoneda.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Coyoneda.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Day.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lan.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lift.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Ran.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Rift.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Yoneda.dyn_o dist/dist-sandbox-bc211410/build/Data/Functor/Coyoneda.dyn_o -o dist/dist-sandbox-bc211410/build/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5-ghc7.10.2.so
+In-place registering kan-extensions-4.2.3...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key kanex_AZ1z1CuYG3UJ3G7vJTiBt5 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id adjunctions-4.2.2-e24684cc5cb0c97ba9752746e37d1b8c -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell98 Control.Comonad.Density Control.Monad.Co Control.Monad.Codensity Data.Functor.Contravariant.Day Data.Functor.Contravariant.Yoneda Data.Functor.Contravariant.Coyoneda Data.Functor.Day Data.Functor.Kan.Lan Data.Functor.Kan.Lift Data.Functor.Kan.Ran Data.Functor.Kan.Rift Data.Functor.Yoneda Data.Functor.Coyoneda -Wall
+Creating package registration file:
+/tmp/pkgConf-kan-extensions-4.221033187761597322404.3
+directory dist/dist-sandbox-bc211410/doc/html/kan-extensions does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Comonad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Comonad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Density.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Comonad/Density.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Co.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Monad/Co.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Codensity.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Monad/Codensity.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Day.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant/Day.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Yoneda.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant/Yoneda.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Coyoneda.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant/Coyoneda.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Day.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Day.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lan.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Lan.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lift.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Lift.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Ran.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Ran.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Rift.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Rift.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Yoneda.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Yoneda.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Coyoneda.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Coyoneda.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Comonad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Density.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Comonad/Density.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Co.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Monad/Co.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Codensity.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Control/Monad/Codensity.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Day.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant/Day.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Yoneda.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant/Yoneda.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Functor/Contravariant/Coyoneda.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Contravariant/Coyoneda.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Day.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Day.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lan.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Lan.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Lift.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Lift.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Ran.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Ran.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Kan/Rift.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Kan/Rift.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Yoneda.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Yoneda.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Functor/Coyoneda.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/Data/Functor/Coyoneda.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5
+Installing
+dist/dist-sandbox-bc211410/build/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5.a
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/kan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5/libHSkan-extensions-4.2.3-AZ1z1CuYG3UJ3G7vJTiBt5-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key kanex_AZ1z1CuYG3UJ3G7vJTiBt5 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id adjunctions-4.2.2-e24684cc5cb0c97ba9752746e37d1b8c -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id contravariant-1.3.3-b12b14e5855d051e62e0470d30aee157 -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id free-4.12.1-e22a2dc4665435fd8d53e39b3530bcae -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell98 Control.Comonad.Density Control.Monad.Co Control.Monad.Codensity Data.Functor.Contravariant.Day Data.Functor.Contravariant.Yoneda Data.Functor.Contravariant.Coyoneda Data.Functor.Day Data.Functor.Kan.Lan Data.Functor.Kan.Lift Data.Functor.Kan.Ran Data.Functor.Kan.Rift Data.Functor.Yoneda Data.Functor.Coyoneda -Wall
+Registering kan-extensions-4.2.3...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'

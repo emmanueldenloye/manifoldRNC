@@ -1,0 +1,307 @@
+Configuring bifunctors-5...
+Flags chosen: tagged=True, semigroups=True
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency semigroups ==0.17.0.1: using semigroups-0.17.0.1
+Dependency tagged ==0.8.1: using tagged-0.8.1
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/bifunctors-5
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/bifunctors-5
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building bifunctors-5...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library bifunctors-5...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key bifun_G4gLtDmKDxFEnUJ9Mt7bVz -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -XHaskell98 Data.Biapplicative Data.Bifoldable Data.Bifunctor.Biff Data.Bifunctor.Clown Data.Bifunctor.Flip Data.Bifunctor.Join Data.Bifunctor.Joker Data.Bifunctor.Product Data.Bifunctor.Tannen Data.Bifunctor.Wrapped Data.Bitraversable -Wall
+[ 1 of 11] Compiling Data.Bifoldable  ( src/Data/Bifoldable.hs, dist/dist-sandbox-bc211410/build/Data/Bifoldable.o )
+[ 2 of 11] Compiling Data.Bitraversable ( src/Data/Bitraversable.hs, dist/dist-sandbox-bc211410/build/Data/Bitraversable.o )
+[ 3 of 11] Compiling Data.Biapplicative ( src/Data/Biapplicative.hs, dist/dist-sandbox-bc211410/build/Data/Biapplicative.o )
+[ 4 of 11] Compiling Data.Bifunctor.Biff ( src/Data/Bifunctor/Biff.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Biff.o )
+
+src/Data/Bifunctor/Biff.hs:15:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Biff.hs:19:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Biff.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Data/Bifunctor/Biff.hs:21:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[ 5 of 11] Compiling Data.Bifunctor.Clown ( src/Data/Bifunctor/Clown.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Clown.o )
+
+src/Data/Bifunctor/Clown.hs:17:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Clown.hs:21:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Clown.hs:22:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Data/Bifunctor/Clown.hs:23:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[ 6 of 11] Compiling Data.Bifunctor.Flip ( src/Data/Bifunctor/Flip.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Flip.o )
+
+src/Data/Bifunctor/Flip.hs:16:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Flip.hs:20:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Flip.hs:21:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Data/Bifunctor/Flip.hs:22:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[ 7 of 11] Compiling Data.Bifunctor.Join ( src/Data/Bifunctor/Join.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Join.o )
+
+src/Data/Bifunctor/Join.hs:16:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Join.hs:20:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Join.hs:21:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[ 8 of 11] Compiling Data.Bifunctor.Joker ( src/Data/Bifunctor/Joker.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Joker.o )
+
+src/Data/Bifunctor/Joker.hs:17:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Joker.hs:21:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Joker.hs:22:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[ 9 of 11] Compiling Data.Bifunctor.Product ( src/Data/Bifunctor/Product.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Product.o )
+
+src/Data/Bifunctor/Product.hs:16:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Product.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[10 of 11] Compiling Data.Bifunctor.Tannen ( src/Data/Bifunctor/Tannen.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Tannen.o )
+
+src/Data/Bifunctor/Tannen.hs:15:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Tannen.hs:19:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Tannen.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Data/Bifunctor/Tannen.hs:21:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+[11 of 11] Compiling Data.Bifunctor.Wrapped ( src/Data/Bifunctor/Wrapped.hs, dist/dist-sandbox-bc211410/build/Data/Bifunctor/Wrapped.o )
+
+src/Data/Bifunctor/Wrapped.hs:15:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Data/Bifunctor/Wrapped.hs:19:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Data/Bifunctor/Wrapped.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Data/Bifunctor/Wrapped.hs:21:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+Linking...
+[(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroups"}, pkgVersion = Version
+{versionBranch = [0,17,0,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,1], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-16974/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz.a dist/dist-sandbox-bc211410/build/Data/Biapplicative.o dist/dist-sandbox-bc211410/build/Data/Bifoldable.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Biff.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Clown.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Flip.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Join.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Joker.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Product.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Tannen.o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Wrapped.o dist/dist-sandbox-bc211410/build/Data/Bitraversable.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-16974/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-16974/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/binar_IvYoLp9H6Xy3zEH13MmZwd -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/bytes_6elQVSg5cWdFrvRnfxTUrH -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/conta_LKCPrTJwOTOLk4OU37YmeN -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/hashable-1.2.3.3-2GTZqecVp8NJZrNuKzGxfy -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/prett_7UQTOB05U7lIYPkFOVraeR -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroups-0.17.0.1-7ZJSgZ5CNVm8tWmGAujY46 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/tagged-0.8.1-6Tf46oJAk552xT73wGffBW -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/templ_1ejK907jvoTHoZ6iZtHeyN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/text-1.2.1.3-1l1AN4I48k37RaQ6fm6CEh -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/unordered-containers-0.2.5.1-7E41cj9RvqSJeZ4jSnbs1a -this-package-key bifun_G4gLtDmKDxFEnUJ9Mt7bVz -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 dist/dist-sandbox-bc211410/build/Data/Biapplicative.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifoldable.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Biff.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Clown.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Flip.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Join.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Joker.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Product.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Tannen.dyn_o dist/dist-sandbox-bc211410/build/Data/Bifunctor/Wrapped.dyn_o dist/dist-sandbox-bc211410/build/Data/Bitraversable.dyn_o -o dist/dist-sandbox-bc211410/build/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz-ghc7.10.2.so
+In-place registering bifunctors-5...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key bifun_G4gLtDmKDxFEnUJ9Mt7bVz -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -XHaskell98 Data.Biapplicative Data.Bifoldable Data.Bifunctor.Biff Data.Bifunctor.Clown Data.Bifunctor.Flip Data.Bifunctor.Join Data.Bifunctor.Joker Data.Bifunctor.Product Data.Bifunctor.Tannen Data.Bifunctor.Wrapped Data.Bitraversable -Wall
+Creating package registration file:
+/tmp/pkgConf-bifunctors-52142757034116087764
+directory dist/dist-sandbox-bc211410/doc/html/bifunctors does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/bifunctors-5
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/bifunctors-5/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor
+Installing dist/dist-sandbox-bc211410/build/Data/Biapplicative.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Biapplicative.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifoldable.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifoldable.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Biff.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Biff.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Clown.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Clown.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Flip.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Flip.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Join.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Join.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Joker.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Joker.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Product.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Product.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Tannen.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Tannen.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Wrapped.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Wrapped.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bitraversable.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bitraversable.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor
+Installing dist/dist-sandbox-bc211410/build/Data/Biapplicative.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Biapplicative.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifoldable.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifoldable.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Biff.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Biff.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Clown.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Clown.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Flip.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Flip.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Join.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Join.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Joker.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Joker.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Product.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Product.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Tannen.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Tannen.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bifunctor/Wrapped.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bifunctor/Wrapped.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Bitraversable.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/Data/Bitraversable.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz
+Installing
+dist/dist-sandbox-bc211410/build/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz.a to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz/libHSbifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key bifun_G4gLtDmKDxFEnUJ9Mt7bVz -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -XHaskell98 Data.Biapplicative Data.Bifoldable Data.Bifunctor.Biff Data.Bifunctor.Clown Data.Bifunctor.Flip Data.Bifunctor.Join Data.Bifunctor.Joker Data.Bifunctor.Product Data.Bifunctor.Tannen Data.Bifunctor.Wrapped Data.Bitraversable -Wall
+Registering bifunctors-5...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'

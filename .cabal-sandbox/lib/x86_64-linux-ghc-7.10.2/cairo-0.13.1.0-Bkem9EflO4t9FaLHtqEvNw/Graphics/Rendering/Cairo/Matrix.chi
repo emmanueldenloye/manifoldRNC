@@ -1,0 +1,2 @@
+C->Haskell Interface Version C->Haskell Compiler, version 0.13.13 (gtk2hs branch) "Bin IO", 27 May 2012
+([((True,"cairo_matrix_t"),(False,Ptr,Nothing,"Matrix"))],[("MatrixPtr",Pointer {ptrTypeHO = Ptr, isNewtypeHO = False})])

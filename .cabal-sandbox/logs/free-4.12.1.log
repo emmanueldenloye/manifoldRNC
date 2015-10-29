@@ -1,0 +1,290 @@
+Configuring free-4.12.1...
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency bifunctors ==5: using bifunctors-5
+Dependency comonad ==4.2.7.2: using comonad-4.2.7.2
+Dependency distributive ==0.4.4: using distributive-0.4.4
+Dependency exceptions ==0.8.0.2: using exceptions-0.8.0.2
+Dependency mtl ==2.2.1: using mtl-2.2.1
+Dependency prelude-extras ==0.4.0.2: using prelude-extras-0.4.0.2
+Dependency profunctors ==5.1.1: using profunctors-5.1.1
+Dependency semigroupoids ==5.0.0.4: using semigroupoids-5.0.0.4
+Dependency semigroups ==0.17.0.1: using semigroups-0.17.0.1
+Dependency template-haskell ==2.10.0.0: using template-haskell-2.10.0.0
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/free-4.12.1
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/free-4.12.1
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building free-4.12.1...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library free-4.12.1...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key free_KK4wRIzDy168X97wpxlOT9 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id prelude-extras-0.4.0.2-9cd8ab3397fab5f95aeab2ca5eb4ba56 -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell2010 -XCPP Control.Applicative.Free Control.Applicative.Free.Final Control.Applicative.Trans.Free Control.Alternative.Free Control.Alternative.Free.Final Control.Comonad.Cofree Control.Comonad.Cofree.Class Control.Comonad.Trans.Cofree Control.Comonad.Trans.Coiter Control.Monad.Free Control.Monad.Free.Church Control.Monad.Free.Class Control.Monad.Free.TH Control.Monad.Trans.Free Control.Monad.Trans.Free.Church Control.Monad.Trans.Iter -Wall
+[ 1 of 16] Compiling Control.Monad.Free.TH ( src/Control/Monad/Free/TH.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Free/TH.o )
+[ 2 of 16] Compiling Control.Monad.Free.Class ( src/Control/Monad/Free/Class.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Free/Class.o )
+[ 3 of 16] Compiling Control.Monad.Trans.Iter ( src/Control/Monad/Trans/Iter.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Iter.o )
+[ 4 of 16] Compiling Control.Monad.Trans.Free ( src/Control/Monad/Trans/Free.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free.o )
+[ 5 of 16] Compiling Control.Monad.Trans.Free.Church ( src/Control/Monad/Trans/Free/Church.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free/Church.o )
+[ 6 of 16] Compiling Control.Monad.Free ( src/Control/Monad/Free.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Free.o )
+[ 7 of 16] Compiling Control.Monad.Free.Church ( src/Control/Monad/Free/Church.hs, dist/dist-sandbox-bc211410/build/Control/Monad/Free/Church.o )
+[ 8 of 16] Compiling Control.Comonad.Cofree.Class ( src/Control/Comonad/Cofree/Class.hs, dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree/Class.o )
+[ 9 of 16] Compiling Control.Comonad.Trans.Cofree ( src/Control/Comonad/Trans/Cofree.hs, dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Cofree.o )
+[10 of 16] Compiling Control.Comonad.Trans.Coiter ( src/Control/Comonad/Trans/Coiter.hs, dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Coiter.o )
+[11 of 16] Compiling Control.Comonad.Cofree ( src/Control/Comonad/Cofree.hs, dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree.o )
+[12 of 16] Compiling Control.Alternative.Free.Final ( src/Control/Alternative/Free/Final.hs, dist/dist-sandbox-bc211410/build/Control/Alternative/Free/Final.o )
+[13 of 16] Compiling Control.Alternative.Free ( src/Control/Alternative/Free.hs, dist/dist-sandbox-bc211410/build/Control/Alternative/Free.o )
+[14 of 16] Compiling Control.Applicative.Trans.Free ( src/Control/Applicative/Trans/Free.hs, dist/dist-sandbox-bc211410/build/Control/Applicative/Trans/Free.o )
+[15 of 16] Compiling Control.Applicative.Free.Final ( src/Control/Applicative/Free/Final.hs, dist/dist-sandbox-bc211410/build/Control/Applicative/Free/Final.o )
+[16 of 16] Compiling Control.Applicative.Free ( src/Control/Applicative/Free.hs, dist/dist-sandbox-bc211410/build/Control/Applicative/Free.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"bifunctors-5-06680d8819c4b9bbf1676ae1390767b5",PackageIdentifier {pkgName =
+PackageName {unPackageName = "bifunctors"}, pkgVersion = Version
+{versionBranch = [5], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b",PackageIdentifier {pkgName
+= PackageName {unPackageName = "comonad"}, pkgVersion = Version {versionBranch
+= [4,2,7,2], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1",PackageIdentifier
+{pkgName = PackageName {unPackageName = "distributive"}, pkgVersion = Version
+{versionBranch = [0,4,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd",PackageIdentifier
+{pkgName = PackageName {unPackageName = "exceptions"}, pkgVersion = Version
+{versionBranch = [0,8,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb",PackageIdentifier {pkgName =
+PackageName {unPackageName = "mtl"}, pkgVersion = Version {versionBranch =
+[2,2,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"prelude-extras-0.4.0.2-9cd8ab3397fab5f95aeab2ca5eb4ba56",PackageIdentifier
+{pkgName = PackageName {unPackageName = "prelude-extras"}, pkgVersion =
+Version {versionBranch = [0,4,0,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d",PackageIdentifier
+{pkgName = PackageName {unPackageName = "profunctors"}, pkgVersion = Version
+{versionBranch = [5,1,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroupoids"}, pkgVersion = Version
+{versionBranch = [5,0,0,4], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855",PackageIdentifier
+{pkgName = PackageName {unPackageName = "semigroups"}, pkgVersion = Version
+{versionBranch = [0,17,0,1], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28",PackageIdentifier
+{pkgName = PackageName {unPackageName = "template-haskell"}, pkgVersion =
+Version {versionBranch = [2,10,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-17990/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9.a dist/dist-sandbox-bc211410/build/Control/Applicative/Free.o dist/dist-sandbox-bc211410/build/Control/Applicative/Free/Final.o dist/dist-sandbox-bc211410/build/Control/Applicative/Trans/Free.o dist/dist-sandbox-bc211410/build/Control/Alternative/Free.o dist/dist-sandbox-bc211410/build/Control/Alternative/Free/Final.o dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree.o dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree/Class.o dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Cofree.o dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Coiter.o dist/dist-sandbox-bc211410/build/Control/Monad/Free.o dist/dist-sandbox-bc211410/build/Control/Monad/Free/Church.o dist/dist-sandbox-bc211410/build/Control/Monad/Free/Class.o dist/dist-sandbox-bc211410/build/Control/Monad/Free/TH.o dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free.o dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free/Church.o dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Iter.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-17990/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-17990/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/StateVar-1.1.0.1-6K4a3UqSdqh6lGAm1wlr9s -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/base-orphans-0.4.4-E55c3OEBLyu45sND7mOuE9 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/bifunctors-5-G4gLtDmKDxFEnUJ9Mt7bVz -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/binar_IvYoLp9H6Xy3zEH13MmZwd -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/bytes_6elQVSg5cWdFrvRnfxTUrH -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/comonad-4.2.7.2-BggM6Z4XCUeHVlPwhbJP28 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/conta_LKCPrTJwOTOLk4OU37YmeN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/contravariant-1.3.3-6YXCrIazFLhDoYkGeQkZZL -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/exceptions-0.8.0.2-8GsEeHgaIks3pVGk6GaELJ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/hashable-1.2.3.3-2GTZqecVp8NJZrNuKzGxfy -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/site-local/mtl-2.2.1 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/prelude-extras-0.4.0.2-57eavILAbKD5CaKv31zEDY -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/prett_7UQTOB05U7lIYPkFOVraeR -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/profunctors-5.1.1-6VYMPItTJb46h1RTnXn5Hg -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroupoids-5.0.0.4-BW6xw8pFrWDHWU5GlvdG4W -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/semigroups-0.17.0.1-7ZJSgZ5CNVm8tWmGAujY46 -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/stm-2.4.4-C1kFMnPqFjvDhFjgMZGUpr -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/tagged-0.8.1-6Tf46oJAk552xT73wGffBW -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/templ_1ejK907jvoTHoZ6iZtHeyN -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/text-1.2.1.3-1l1AN4I48k37RaQ6fm6CEh -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/trans_3eG64VdP2vzGjP6wJiCp5X -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/transformers-compat-0.4.0.4-DCQioW2d4vYEa3T0AmFBPv -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/unordered-containers-0.2.5.1-7E41cj9RvqSJeZ4jSnbs1a -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/void-0.7.1-9yhpMnPXpwdEXb0fUkPcv6 -this-package-key free_KK4wRIzDy168X97wpxlOT9 -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id prelude-extras-0.4.0.2-9cd8ab3397fab5f95aeab2ca5eb4ba56 -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff dist/dist-sandbox-bc211410/build/Control/Applicative/Free.dyn_o dist/dist-sandbox-bc211410/build/Control/Applicative/Free/Final.dyn_o dist/dist-sandbox-bc211410/build/Control/Applicative/Trans/Free.dyn_o dist/dist-sandbox-bc211410/build/Control/Alternative/Free.dyn_o dist/dist-sandbox-bc211410/build/Control/Alternative/Free/Final.dyn_o dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree.dyn_o dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree/Class.dyn_o dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Cofree.dyn_o dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Coiter.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Free.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Free/Church.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Free/Class.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Free/TH.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free/Church.dyn_o dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Iter.dyn_o -o dist/dist-sandbox-bc211410/build/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9-ghc7.10.2.so
+In-place registering free-4.12.1...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key free_KK4wRIzDy168X97wpxlOT9 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id prelude-extras-0.4.0.2-9cd8ab3397fab5f95aeab2ca5eb4ba56 -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell2010 -XCPP Control.Applicative.Free Control.Applicative.Free.Final Control.Applicative.Trans.Free Control.Alternative.Free Control.Alternative.Free.Final Control.Comonad.Cofree Control.Comonad.Cofree.Class Control.Comonad.Trans.Cofree Control.Comonad.Trans.Coiter Control.Monad.Free Control.Monad.Free.Church Control.Monad.Free.Class Control.Monad.Free.TH Control.Monad.Trans.Free Control.Monad.Trans.Free.Church Control.Monad.Trans.Iter -Wall
+Creating package registration file:
+/tmp/pkgConf-free-4.126534688582130794395.1
+directory dist/dist-sandbox-bc211410/doc/html/free does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/free-4.12.1
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/free-4.12.1/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Free
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Trans
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative/Free
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Cofree
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Trans
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Free
+Installing dist/dist-sandbox-bc211410/build/Control/Applicative/Free.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Free.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Applicative/Free/Final.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Free/Final.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Applicative/Trans/Free.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Trans/Free.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Alternative/Free.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative/Free.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Alternative/Free/Final.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative/Free/Final.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Cofree.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree/Class.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Cofree/Class.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Cofree.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Trans/Cofree.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Coiter.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Trans/Coiter.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free/Church.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free/Church.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free/Class.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free/Class.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free/TH.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free/TH.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Free.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free/Church.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Free/Church.hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Iter.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Iter.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Free
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Trans
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative/Free
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Cofree
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Trans
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Free
+Installing dist/dist-sandbox-bc211410/build/Control/Applicative/Free.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Free.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Applicative/Free/Final.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Free/Final.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Applicative/Trans/Free.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Applicative/Trans/Free.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Alternative/Free.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative/Free.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Alternative/Free/Final.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Alternative/Free/Final.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Cofree.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Comonad/Cofree/Class.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Cofree/Class.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Cofree.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Trans/Cofree.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Comonad/Trans/Coiter.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Comonad/Trans/Coiter.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free/Church.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free/Church.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free/Class.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free/Class.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Free/TH.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Free/TH.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Free.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Free/Church.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Free/Church.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Control/Monad/Trans/Iter.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/Control/Monad/Trans/Iter.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9
+Installing
+dist/dist-sandbox-bc211410/build/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9.a to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/free-4.12.1-KK4wRIzDy168X97wpxlOT9/libHSfree-4.12.1-KK4wRIzDy168X97wpxlOT9-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key free_KK4wRIzDy168X97wpxlOT9 -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id bifunctors-5-06680d8819c4b9bbf1676ae1390767b5 -package-id comonad-4.2.7.2-b1b638c93067c190c2ec535102389f4b -package-id distributive-0.4.4-8ccf7d9b4dba827f6bbdf2f9c6ea65a1 -package-id exceptions-0.8.0.2-b08bd0de7dff383d124cad3f4c34eddd -package-id mtl-2.2.1-5cf332b11edb88a6040af20fd6a58acb -package-id prelude-extras-0.4.0.2-9cd8ab3397fab5f95aeab2ca5eb4ba56 -package-id profunctors-5.1.1-94b0f7034cf809183c61149785a8ff2d -package-id semigroupoids-5.0.0.4-02d14ffb9b70e76d92bc716fe1b6eb43 -package-id semigroups-0.17.0.1-614f148d3938a364e9de81982cf5c855 -package-id template-haskell-2.10.0.0-90e8393d65f4ae44cb2026177a257f28 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell2010 -XCPP Control.Applicative.Free Control.Applicative.Free.Final Control.Applicative.Trans.Free Control.Alternative.Free Control.Alternative.Free.Final Control.Comonad.Cofree Control.Comonad.Cofree.Class Control.Comonad.Trans.Cofree Control.Comonad.Trans.Coiter Control.Monad.Free Control.Monad.Free.Church Control.Monad.Free.Class Control.Monad.Free.TH Control.Monad.Trans.Free Control.Monad.Trans.Free.Church Control.Monad.Trans.Iter -Wall
+Registering free-4.12.1...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'

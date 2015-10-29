@@ -1,0 +1,336 @@
+Configuring fgl-5.5.2.3...
+Flags chosen: containers042=True
+Dependency array ==0.5.1.0: using array-0.5.1.0
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency containers ==0.5.6.2: using containers-0.5.6.2
+Dependency deepseq ==1.4.1.1: using deepseq-1.4.1.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building fgl-5.5.2.3...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library fgl-5.5.2.3...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -i. -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key fgl_5kh7Ffsnjax0Ppv4qaraEf -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id deepseq-1.4.1.1-8fb9688ae42216e388cee132aef3d148 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell98 Data.Graph.Inductive.Internal.Heap Data.Graph.Inductive.Internal.Queue Data.Graph.Inductive.Internal.RootPath Data.Graph.Inductive.Internal.Thread Data.Graph.Inductive.Basic Data.Graph.Inductive.Example Data.Graph.Inductive.Graph Data.Graph.Inductive.Monad Data.Graph.Inductive.NodeMap Data.Graph.Inductive.PatriciaTree Data.Graph.Inductive.Query Data.Graph.Inductive.Tree Data.Graph.Inductive.Monad.IOArray Data.Graph.Inductive.Query.ArtPoint Data.Graph.Inductive.Query.BCC Data.Graph.Inductive.Query.BFS Data.Graph.Inductive.Query.DFS Data.Graph.Inductive.Query.Dominators Data.Graph.Inductive.Query.GVD Data.Graph.Inductive.Query.Indep Data.Graph.Inductive.Query.MST Data.Graph.Inductive.Query.MaxFlow Data.Graph.Inductive.Query.MaxFlow2 Data.Graph.Inductive.Query.Monad Data.Graph.Inductive.Query.SP Data.Graph.Inductive.Query.TransClos Data.Graph.Inductive Paths_fgl -Wall
+[ 1 of 28] Compiling Paths_fgl        ( dist/dist-sandbox-bc211410/build/autogen/Paths_fgl.hs, dist/dist-sandbox-bc211410/build/Paths_fgl.o )
+[ 2 of 28] Compiling Data.Graph.Inductive.Internal.Thread ( Data/Graph/Inductive/Internal/Thread.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Thread.o )
+[ 3 of 28] Compiling Data.Graph.Inductive.Graph ( Data/Graph/Inductive/Graph.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Graph.o )
+[ 4 of 28] Compiling Data.Graph.Inductive.Basic ( Data/Graph/Inductive/Basic.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Basic.o )
+[ 5 of 28] Compiling Data.Graph.Inductive.PatriciaTree ( Data/Graph/Inductive/PatriciaTree.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/PatriciaTree.o )
+[ 6 of 28] Compiling Data.Graph.Inductive.Monad ( Data/Graph/Inductive/Monad.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad.o )
+[ 7 of 28] Compiling Data.Graph.Inductive.Monad.IOArray ( Data/Graph/Inductive/Monad/IOArray.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad/IOArray.o )
+[ 8 of 28] Compiling Data.Graph.Inductive.Example ( Data/Graph/Inductive/Example.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Example.o )
+[ 9 of 28] Compiling Data.Graph.Inductive.NodeMap ( Data/Graph/Inductive/NodeMap.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/NodeMap.o )
+[10 of 28] Compiling Data.Graph.Inductive.Query.ArtPoint ( Data/Graph/Inductive/Query/ArtPoint.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/ArtPoint.o )
+[11 of 28] Compiling Data.Graph.Inductive.Query.DFS ( Data/Graph/Inductive/Query/DFS.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/DFS.o )
+[12 of 28] Compiling Data.Graph.Inductive.Query.BCC ( Data/Graph/Inductive/Query/BCC.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BCC.o )
+[13 of 28] Compiling Data.Graph.Inductive.Query.Dominators ( Data/Graph/Inductive/Query/Dominators.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Dominators.o )
+[14 of 28] Compiling Data.Graph.Inductive.Query.Indep ( Data/Graph/Inductive/Query/Indep.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Indep.o )
+[15 of 28] Compiling Data.Graph.Inductive.Query.Monad ( Data/Graph/Inductive/Query/Monad.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Monad.o )
+[16 of 28] Compiling Data.Graph.Inductive.Query.TransClos ( Data/Graph/Inductive/Query/TransClos.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/TransClos.o )
+[17 of 28] Compiling Data.Graph.Inductive.Tree ( Data/Graph/Inductive/Tree.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Tree.o )
+[18 of 28] Compiling Data.Graph.Inductive.Internal.RootPath ( Data/Graph/Inductive/Internal/RootPath.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/RootPath.o )
+[19 of 28] Compiling Data.Graph.Inductive.Internal.Queue ( Data/Graph/Inductive/Internal/Queue.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Queue.o )
+[20 of 28] Compiling Data.Graph.Inductive.Query.BFS ( Data/Graph/Inductive/Query/BFS.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BFS.o )
+[21 of 28] Compiling Data.Graph.Inductive.Query.MaxFlow ( Data/Graph/Inductive/Query/MaxFlow.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow.o )
+[22 of 28] Compiling Data.Graph.Inductive.Query.MaxFlow2 ( Data/Graph/Inductive/Query/MaxFlow2.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow2.o )
+[23 of 28] Compiling Data.Graph.Inductive.Internal.Heap ( Data/Graph/Inductive/Internal/Heap.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Heap.o )
+[24 of 28] Compiling Data.Graph.Inductive.Query.MST ( Data/Graph/Inductive/Query/MST.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MST.o )
+[25 of 28] Compiling Data.Graph.Inductive.Query.SP ( Data/Graph/Inductive/Query/SP.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/SP.o )
+[26 of 28] Compiling Data.Graph.Inductive.Query.GVD ( Data/Graph/Inductive/Query/GVD.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/GVD.o )
+[27 of 28] Compiling Data.Graph.Inductive.Query ( Data/Graph/Inductive/Query.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query.o )
+[28 of 28] Compiling Data.Graph.Inductive ( Data/Graph/Inductive.hs, dist/dist-sandbox-bc211410/build/Data/Graph/Inductive.o )
+Linking...
+[(InstalledPackageId
+"array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8",PackageIdentifier {pkgName =
+PackageName {unPackageName = "array"}, pkgVersion = Version {versionBranch =
+[0,5,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"containers-0.5.6.2-2de75421d746ab474b330e43191bb31b",PackageIdentifier
+{pkgName = PackageName {unPackageName = "containers"}, pkgVersion = Version
+{versionBranch = [0,5,6,2], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"deepseq-1.4.1.1-8fb9688ae42216e388cee132aef3d148",PackageIdentifier {pkgName
+= PackageName {unPackageName = "deepseq"}, pkgVersion = Version {versionBranch
+= [1,4,1,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True [])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-13490/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf.a dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Heap.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Queue.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/RootPath.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Thread.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Basic.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Example.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Graph.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/NodeMap.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/PatriciaTree.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Tree.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad/IOArray.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/ArtPoint.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BCC.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BFS.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/DFS.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Dominators.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/GVD.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Indep.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MST.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow2.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Monad.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/SP.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/TransClos.o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive.o dist/dist-sandbox-bc211410/build/Paths_fgl.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-13490/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-13490/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/conta_LKCPrTJwOTOLk4OU37YmeN -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/trans_3eG64VdP2vzGjP6wJiCp5X -this-package-key fgl_5kh7Ffsnjax0Ppv4qaraEf -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id deepseq-1.4.1.1-8fb9688ae42216e388cee132aef3d148 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Heap.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Queue.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/RootPath.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Thread.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Basic.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Example.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Graph.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/NodeMap.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/PatriciaTree.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Tree.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad/IOArray.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/ArtPoint.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BCC.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BFS.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/DFS.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Dominators.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/GVD.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Indep.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MST.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow2.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Monad.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/SP.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/TransClos.dyn_o dist/dist-sandbox-bc211410/build/Data/Graph/Inductive.dyn_o dist/dist-sandbox-bc211410/build/Paths_fgl.dyn_o -o dist/dist-sandbox-bc211410/build/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf-ghc7.10.2.so
+In-place registering fgl-5.5.2.3...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -i. -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key fgl_5kh7Ffsnjax0Ppv4qaraEf -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id deepseq-1.4.1.1-8fb9688ae42216e388cee132aef3d148 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell98 Data.Graph.Inductive.Internal.Heap Data.Graph.Inductive.Internal.Queue Data.Graph.Inductive.Internal.RootPath Data.Graph.Inductive.Internal.Thread Data.Graph.Inductive.Basic Data.Graph.Inductive.Example Data.Graph.Inductive.Graph Data.Graph.Inductive.Monad Data.Graph.Inductive.NodeMap Data.Graph.Inductive.PatriciaTree Data.Graph.Inductive.Query Data.Graph.Inductive.Tree Data.Graph.Inductive.Monad.IOArray Data.Graph.Inductive.Query.ArtPoint Data.Graph.Inductive.Query.BCC Data.Graph.Inductive.Query.BFS Data.Graph.Inductive.Query.DFS Data.Graph.Inductive.Query.Dominators Data.Graph.Inductive.Query.GVD Data.Graph.Inductive.Query.Indep Data.Graph.Inductive.Query.MST Data.Graph.Inductive.Query.MaxFlow Data.Graph.Inductive.Query.MaxFlow2 Data.Graph.Inductive.Query.Monad Data.Graph.Inductive.Query.SP Data.Graph.Inductive.Query.TransClos Data.Graph.Inductive -Wall
+Creating package registration file: /tmp/pkgConf-fgl-5.5.2114161612484353895.3
+directory dist/dist-sandbox-bc211410/doc/html/fgl does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Heap.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/Heap.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Queue.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/Queue.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/RootPath.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/RootPath.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Thread.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/Thread.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Basic.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Basic.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Example.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Example.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Graph.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Graph.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Monad.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/NodeMap.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/NodeMap.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/PatriciaTree.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/PatriciaTree.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Tree.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Tree.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad/IOArray.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Monad/IOArray.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/ArtPoint.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/ArtPoint.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BCC.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/BCC.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BFS.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/BFS.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/DFS.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/DFS.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Dominators.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/Dominators.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/GVD.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/GVD.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Indep.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/Indep.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MST.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/MST.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/MaxFlow.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow2.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/MaxFlow2.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Monad.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/Monad.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/SP.hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/SP.hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/TransClos.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/TransClos.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive.hi
+Installing dist/dist-sandbox-bc211410/build/Paths_fgl.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Paths_fgl.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Monad
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Heap.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/Heap.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Queue.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/Queue.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/RootPath.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/RootPath.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Internal/Thread.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Internal/Thread.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Basic.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Basic.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Example.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Example.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Graph.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Graph.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Monad.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/NodeMap.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/NodeMap.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/PatriciaTree.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/PatriciaTree.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Tree.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Tree.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Monad/IOArray.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Monad/IOArray.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/ArtPoint.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/ArtPoint.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BCC.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/BCC.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/BFS.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/BFS.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/DFS.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/DFS.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Dominators.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/Dominators.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/GVD.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/GVD.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Indep.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/Indep.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MST.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/MST.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/MaxFlow.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/MaxFlow2.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/MaxFlow2.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/Monad.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/Monad.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/SP.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/SP.dyn_hi
+Installing
+dist/dist-sandbox-bc211410/build/Data/Graph/Inductive/Query/TransClos.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive/Query/TransClos.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Graph/Inductive.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Data/Graph/Inductive.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Paths_fgl.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/Paths_fgl.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+Installing
+dist/dist-sandbox-bc211410/build/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf.a to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/fgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf/libHSfgl-5.5.2.3-5kh7Ffsnjax0Ppv4qaraEf-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -i. -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key fgl_5kh7Ffsnjax0Ppv4qaraEf -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id array-0.5.1.0-d4206b835b96b5079d918fa1eab1a9a8 -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id containers-0.5.6.2-2de75421d746ab474b330e43191bb31b -package-id deepseq-1.4.1.1-8fb9688ae42216e388cee132aef3d148 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -XHaskell98 Data.Graph.Inductive.Internal.Heap Data.Graph.Inductive.Internal.Queue Data.Graph.Inductive.Internal.RootPath Data.Graph.Inductive.Internal.Thread Data.Graph.Inductive.Basic Data.Graph.Inductive.Example Data.Graph.Inductive.Graph Data.Graph.Inductive.Monad Data.Graph.Inductive.NodeMap Data.Graph.Inductive.PatriciaTree Data.Graph.Inductive.Query Data.Graph.Inductive.Tree Data.Graph.Inductive.Monad.IOArray Data.Graph.Inductive.Query.ArtPoint Data.Graph.Inductive.Query.BCC Data.Graph.Inductive.Query.BFS Data.Graph.Inductive.Query.DFS Data.Graph.Inductive.Query.Dominators Data.Graph.Inductive.Query.GVD Data.Graph.Inductive.Query.Indep Data.Graph.Inductive.Query.MST Data.Graph.Inductive.Query.MaxFlow Data.Graph.Inductive.Query.MaxFlow2 Data.Graph.Inductive.Query.Monad Data.Graph.Inductive.Query.SP Data.Graph.Inductive.Query.TransClos Data.Graph.Inductive -Wall
+Registering fgl-5.5.2.3...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'

@@ -1,0 +1,139 @@
+[1 of 1] Compiling Main             ( /tmp/cabal-tmp-13187/distributive-0.4.4/dist/dist-sandbox-bc211410/setup/setup.hs, /tmp/cabal-tmp-13187/distributive-0.4.4/dist/dist-sandbox-bc211410/setup/Main.o )
+Linking /tmp/cabal-tmp-13187/distributive-0.4.4/dist/dist-sandbox-bc211410/setup/setup ...
+Configuring distributive-0.4.4...
+Flags chosen: lib-werror=False
+Dependency base ==4.8.1.0: using base-4.8.1.0
+Dependency ghc-prim ==0.4.0.0: using ghc-prim-0.4.0.0
+Dependency tagged ==0.8.1: using tagged-0.8.1
+Dependency transformers ==0.4.2.0: using transformers-0.4.2.0
+Dependency transformers-compat ==0.4.0.4: using transformers-compat-0.4.0.4
+Using Cabal-1.22.4.0 compiled by ghc-7.10
+Using compiler: ghc-7.10.2
+Using install prefix:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox
+Binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/bin
+Libraries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q
+Private binaries installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/libexec
+Data files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/distributive-0.4.4
+Documentation installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/distributive-0.4.4
+Configuration files installed in:
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/etc
+Using alex version 3.1.4 found on system at: /home/emmanuel/.cabal/bin/alex
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+Using cpphs version 1.19.3 found on system at: /home/emmanuel/.cabal/bin/cpphs
+Using gcc version 5.2.0 found on system at: /usr/bin/gcc
+Using ghc version 7.10.2 found on system at: /usr/bin/ghc
+Using ghc-pkg version 7.10.2 found on system at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.16.1 found on system at: /usr/bin/haddock
+Using happy version 1.19.5 found on system at: /home/emmanuel/.cabal/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.67 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.22 found on system at:
+/home/emmanuel/.cabal/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/ld
+No lhc found
+No lhc-pkg found
+Using pkg-config version 0.29 found on system at: /usr/bin/pkg-config
+Using strip version 2.25 found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+creating dist/dist-sandbox-bc211410/build/autogen
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Component build order: library
+creating dist/dist-sandbox-bc211410/build
+creating dist/dist-sandbox-bc211410/build/autogen
+Building distributive-0.4.4...
+/usr/bin/ghc-pkg init dist/dist-sandbox-bc211410/package.conf.inplace
+Preprocessing library distributive-0.4.4...
+Building library...
+creating dist/dist-sandbox-bc211410/build
+/usr/bin/ghc --make -fbuilding-cabal-package -O -static -dynamic-too -dynosuf dyn_o -dynhisuf dyn_hi -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key distr_IiTFZxvjHzA0FvKz3AU35Q -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -XHaskell98 Data.Distributive Data.Distributive.Generic -Wall
+[1 of 2] Compiling Data.Distributive.Generic ( src/Data/Distributive/Generic.hs, dist/dist-sandbox-bc211410/build/Data/Distributive/Generic.o )
+[2 of 2] Compiling Data.Distributive ( src/Data/Distributive.hs, dist/dist-sandbox-bc211410/build/Data/Distributive.o )
+Linking...
+[(InstalledPackageId
+"base-4.8.1.0-4f7206fd964c629946bb89db72c80011",PackageIdentifier {pkgName =
+PackageName {unPackageName = "base"}, pkgVersion = Version {versionBranch =
+[4,8,1,0], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21",PackageIdentifier {pkgName
+= PackageName {unPackageName = "ghc-prim"}, pkgVersion = Version
+{versionBranch = [0,4,0,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6",PackageIdentifier {pkgName =
+PackageName {unPackageName = "tagged"}, pkgVersion = Version {versionBranch =
+[0,8,1], versionTags = []}},ModuleRenaming True []),(InstalledPackageId
+"transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers"}, pkgVersion = Version
+{versionBranch = [0,4,2,0], versionTags = []}},ModuleRenaming True
+[]),(InstalledPackageId
+"transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c",PackageIdentifier
+{pkgName = PackageName {unPackageName = "transformers-compat"}, pkgVersion =
+Version {versionBranch = [0,4,0,4], versionTags = []}},ModuleRenaming True
+[])]
+/usr/bin/ar -r dist/dist-sandbox-bc211410/build/objs-15743/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q.a dist/dist-sandbox-bc211410/build/Data/Distributive.o dist/dist-sandbox-bc211410/build/Data/Distributive/Generic.o
+/usr/bin/ar: creating dist/dist-sandbox-bc211410/build/objs-15743/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q.a
+/usr/bin/strip dist/dist-sandbox-bc211410/build/objs-15743/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q.a --strip-unneeded
+/usr/bin/ghc -shared -dynamic '-dynload deploy' -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/array_E0sTtauuKsGDLZoT7lTbgZ -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/base_GDytRqRVSUX7zckgKqJjgw -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/rts -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/deeps_LbCWUlehDDeLxurARKDH5o -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/ghcpr_8TmvWUcS1U1IKHT0levwg3 -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/integ_2aU3IZNMF9a7mQ0OzsZ0dS -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/prett_7UQTOB05U7lIYPkFOVraeR -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/tagged-0.8.1-6Tf46oJAk552xT73wGffBW -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/templ_1ejK907jvoTHoZ6iZtHeyN -optl-Wl,-rpath,/usr/lib/ghc-7.10.2/trans_3eG64VdP2vzGjP6wJiCp5X -optl-Wl,-rpath,/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/transformers-compat-0.4.0.4-DCQioW2d4vYEa3T0AmFBPv -this-package-key distr_IiTFZxvjHzA0FvKz3AU35Q -no-auto-link-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-db dist/dist-sandbox-bc211410/package.conf.inplace -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c dist/dist-sandbox-bc211410/build/Data/Distributive.dyn_o dist/dist-sandbox-bc211410/build/Data/Distributive/Generic.dyn_o -o dist/dist-sandbox-bc211410/build/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q-ghc7.10.2.so
+In-place registering distributive-0.4.4...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d' '--package-db=dist/dist-sandbox-bc211410/package.conf.inplace'
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key distr_IiTFZxvjHzA0FvKz3AU35Q -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -XHaskell98 Data.Distributive Data.Distributive.Generic -Wall
+Creating package registration file:
+/tmp/pkgConf-distributive-0.4402724286593209441.4
+directory dist/dist-sandbox-bc211410/doc/html/distributive does exist: False
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/distributive-0.4.4
+Installing LICENSE to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/share/doc/x86_64-linux-ghc-7.10.2/distributive-0.4.4/LICENSE
+Installing library in
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data/Distributive
+Installing dist/dist-sandbox-bc211410/build/Data/Distributive.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data/Distributive.hi
+Installing dist/dist-sandbox-bc211410/build/Data/Distributive/Generic.hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data/Distributive/Generic.hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data/Distributive
+Installing dist/dist-sandbox-bc211410/build/Data/Distributive.dyn_hi to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data/Distributive.dyn_hi
+Installing dist/dist-sandbox-bc211410/build/Data/Distributive/Generic.dyn_hi
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/Data/Distributive/Generic.dyn_hi
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q
+Installing
+dist/dist-sandbox-bc211410/build/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q.a
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q.a
+creating
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q
+/usr/bin/strip dist/dist-sandbox-bc211410/build/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q-ghc7.10.2.so --strip-unneeded
+Installing executable
+dist/dist-sandbox-bc211410/build/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q-ghc7.10.2.so
+to
+/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.2/distributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q/libHSdistributive-0.4.4-IiTFZxvjHzA0FvKz3AU35Q-ghc7.10.2.so
+/usr/bin/ghc --abi-hash -fbuilding-cabal-package -O -outputdir dist/dist-sandbox-bc211410/build -odir dist/dist-sandbox-bc211410/build -hidir dist/dist-sandbox-bc211410/build -stubdir dist/dist-sandbox-bc211410/build -i -idist/dist-sandbox-bc211410/build -isrc -idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build/autogen -Idist/dist-sandbox-bc211410/build -optP-include -optPdist/dist-sandbox-bc211410/build/autogen/cabal_macros.h -this-package-key distr_IiTFZxvjHzA0FvKz3AU35Q -hide-all-packages -no-user-package-db -package-db /home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d -package-id base-4.8.1.0-4f7206fd964c629946bb89db72c80011 -package-id ghc-prim-0.4.0.0-af16264bc80979d06e37ac63e3ba9a21 -package-id tagged-0.8.1-8fb7724b78ef88e44ca8950c77a173f6 -package-id transformers-0.4.2.0-21dcbf13c43f5d8cf6a1f54dee6c5bff -package-id transformers-compat-0.4.0.4-3ca5cbcec233c17da785d5f27705643c -XHaskell98 Data.Distributive Data.Distributive.Generic -Wall
+Registering distributive-0.4.4...
+/usr/bin/ghc-pkg update - --global --no-user-package-db '--package-db=/home/emmanuel/Dropbox/haskell/brun_fast_git/.cabal-sandbox/x86_64-linux-ghc-7.10.2-packages.conf.d'
