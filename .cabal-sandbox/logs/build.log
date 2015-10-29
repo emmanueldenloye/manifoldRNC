@@ -570,3 +570,27 @@ dependencies: vector-0.11.0.0 unix-2.7.1.0 random-1.1
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: manifoldRNC-0.1.0.0
+os: linux
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: vector-0.11.0.0 unix-2.7.1.0 random-1.1
+              hmatrix-0.17.0.1 filepath-1.4.0.0 fgl-5.5.2.3 base-4.8.1.0
+              Chart-cairo-1.5.4 Chart-1.5.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: manifoldRNC-0.1.0.0
+os: linux
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: vector-0.11.0.0 unix-2.7.1.0 random-1.1
+              hmatrix-0.17.0.1 filepath-1.4.0.0 fgl-5.5.2.3 base-4.8.1.0
+              Chart-cairo-1.5.4 Chart-1.5.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
