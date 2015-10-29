@@ -1,0 +1,12 @@
+manifoldRNC
+===========
+
+This is my first Haskell package. It is not yet even remotely complete
+or positively correct. This package contains an implementation of a
+manifold learning algorithm discovered by Andres Brun et. al in their
+2005 published academic work "Fast Manifold Learning Based on
+Riemannian Normal Coordinates".  I still have to tweak the
+interpolation step properly and find faster, yet sufficiently
+accurate, algorithms/data structures for necessary speed boosts. This
+will be updated around the clock and this document will reflect the
+activity.
