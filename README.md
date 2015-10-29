@@ -10,3 +10,5 @@ interpolation step properly and find faster, yet sufficiently
 accurate, algorithms/data structures for necessary speed boosts. This
 will be updated around the clock and this document will reflect the
 activity.
+
+Update (Oct 29, 2015) : Added the PDF (brun2005fast.pdf) that outlines/informs this implementation.
