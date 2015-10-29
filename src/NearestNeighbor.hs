@@ -1,5 +1,7 @@
 module NearestNeighbor
-(selectK, combineHalves) where
+       ( selectK
+       , combineHalves
+       ) where
 
 import           Data.List (sort)
 import           Data.Maybe

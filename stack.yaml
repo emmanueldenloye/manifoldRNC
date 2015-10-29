@@ -1,0 +1,10 @@
+resolver: lts-3.11
+
+packages:
+- '.'
+
+extra-deps:
+  - hmatrix-0.17.0.1
+  # - Chart-cairo-1.3.3
+
+flags: {}
