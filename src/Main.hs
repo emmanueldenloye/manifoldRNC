@@ -56,14 +56,14 @@ procMNIST selection mat = images
     mSel f x = f  ((+ (-1)) $ cols x) x
 
 pp2DResults' :: Show a => FilePath -> [a] -> IO ()
-pp2DResults' file xs= writeFile file . transPairLine . getPairs $ xs
+pp2DResults' file xs = writeFile file . transPairLine . getPairs $ xs
   where
     transPairLine = concatMap
                 (\x -> show (fst x) ++ " " ++ show (snd x) ++ "\n")
 
 getPairs :: [t] -> [(t, t)]
 getPairs []       = []
-getPairs [x]      = [(x,x)] -- This is an assumption.
+getPairs [x]      = [(x,x)]
 getPairs [x,y]    = [(x,y)]
 getPairs (x:y:xs) = (x,y):getPairs xs
 

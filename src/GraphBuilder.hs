@@ -1,6 +1,9 @@
 module GraphBuilder
-(buildGraph,capTrees,shakeNodes,shakePoints)
-where
+       (buildGraph
+       ,capTrees
+       ,shakeNodes
+       ,shakePoints
+       ) where
 
 import Data.Graph.Inductive
 import qualified Data.Vector as V

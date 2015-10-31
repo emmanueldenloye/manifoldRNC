@@ -36,14 +36,16 @@ simpleBuild = V.unfoldr (\x -> if V.null . V.tail $ x
     splitVec vec   = (V.head vec,V.tail vec)
 
 dists
-    :: (Fractional b, S.Storable b)
-    => S.Vector b
-    -> V.Vector (S.Vector b)
-    -> V.Vector b
+ :: S.Vector Double
+ -> V.Vector (S.Vector Double)
+ -> V.Vector Double
 dists pt = V.map (distFunc pt)
+
+distFunc ::  H.Vector Double -> H.Vector Double -> Double
+distFunc xs ys = S.sum . S.zipWith diffsq xs $ ys
   where
-    distFunc xs ys = S.sum . S.zipWith diffsq xs $ ys
-    diffsq x y     = (x - y) * (x - y)
+    diffsq x y = (x-y) * (x-y)
+
 
 combineHalves :: Int -> V.Vector (V.Vector Double) -> Maybe (V.Vector Double)
 combineHalves numK built = f' <$> getExistDLH numK <*> getExistDRH numK $ built

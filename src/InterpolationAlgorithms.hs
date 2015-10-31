@@ -12,10 +12,9 @@ import qualified Numeric.LinearAlgebra as L
 import qualified Numeric.LinearAlgebra.HMatrix as H
 
 getQuadCoeffs
-  :: H.Field t
-  => V.Vector (V.Vector t)
-  -> V.Vector (H.Vector t)
-  -> V.Vector (H.Vector t)
+  :: V.Vector (V.Vector Double)
+  -> V.Vector (H.Vector Double)
+  -> V.Vector (H.Vector Double)
 getQuadCoeffs interps coeffs = V.fromList . H.toColumns
                                . L.linearSolveLS buildRect $ depv
   where

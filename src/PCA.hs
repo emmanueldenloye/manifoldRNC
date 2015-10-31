@@ -25,7 +25,7 @@ getBasisVect num setx pt = case selectK num pt setx of
                           Nothing -> Nothing
 
 getBases
-  :: V.Vector (Maybe (V.Vector (a, H.Vector Double)))
+  :: V.Vector (Maybe (V.Vector (Int, H.Vector Double)))
   -> V.Vector (Maybe (H.Matrix Double))
 getBases = V.map
            (fmap $ getCov 2 . H.fromRows . V.toList . fmap snd)
