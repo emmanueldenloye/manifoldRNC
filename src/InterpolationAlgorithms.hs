@@ -10,6 +10,7 @@ import qualified Data.Vector.Storable as S
 import           GraphBuilder
 import qualified Numeric.LinearAlgebra as L
 import qualified Numeric.LinearAlgebra.HMatrix as H
+import qualified Data.Vector.Unboxed as U
 
 getQuadCoeffs
   :: V.Vector (V.Vector Double)
@@ -28,7 +29,7 @@ getQuadCoeffs interps coeffs = V.fromList . H.toColumns
 gradInterpolation
   :: Gr () Double
      -> V.Vector (Maybe (V.Vector Node))
-     -> V.Vector (Maybe (V.Vector (H.Vector Double)))
+     -> V.Vector (Maybe (V.Vector (U.Vector Double)))
      -> V.Vector (Maybe (H.Matrix Double))
      -> Int
      -> Maybe (V.Vector (Double, Double))
@@ -36,7 +37,8 @@ gradInterpolation grp verts pts mats num = convertToTuple . nodeGrad $ num
   where
     vars numNode       = liftM2 (\x -> V.map (H.<# H.tr x))
                         ((V.!) mats numNode)
-                        ((V.!) pts numNode)
+                        (V.map (L.fromList . U.toList)
+                         <$> (V.!) pts numNode)
     depvars numNode    = capTrees
                         (grp :: Gr () Double)
                         ((V.! numNode) verts)

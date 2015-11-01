@@ -15,6 +15,7 @@ import System.Environment
 import System.FilePath.Posix
 import System.Posix.Files
 import System.Random
+import Data.Vector.Unboxed as U hiding ((++),concatMap,zip,or,foldr,all,null)
 
 usage :: String
 usage = "Usage: ./init_present <file> <Graph nbd size> <PCA nbd size>"
@@ -68,7 +69,7 @@ getPairs [x,y]    = [(x,y)]
 getPairs (x:y:xs) = (x,y):getPairs xs
 
 runAnalysis
-  :: V.Vector (H.Vector Double)
+  :: V.Vector (U.Vector Double)
   -> Int
   -> Gr () Double
   -> Int
@@ -94,7 +95,8 @@ main =
                            then val
                            else error (errorMsg1 ++ usage)
                   else error (errorMsg2 ++ usage)
-     let images = V.fromList . H.toRows $ rawImages
+     let images = V.map (U.fromList . L.toList)
+                  . V.fromList . H.toRows $ rawImages
      let graph  = buildGraph
                      (read $ Prelude.head nbds :: Int) images
      basePoint <- randomRIO (0,V.length images - 1)

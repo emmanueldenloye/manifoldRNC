@@ -7,15 +7,15 @@ module GraphBuilder
 
 import Data.Graph.Inductive
 import qualified Data.Vector as V
-import qualified Numeric.LinearAlgebra.HMatrix as H
 import Data.List
 import Data.Maybe
 import NearestNeighbor (selectK)
+import qualified Data.Vector.Unboxed as U
 
 buildGraph
   :: DynGraph gr
   => Int
-  -> V.Vector (H.Vector Double)
+  -> V.Vector (U.Vector Double)
   -> gr () Double
 buildGraph numK setx = buildGr . filtCxts . cleanzip $ gcontexts
   where
@@ -29,8 +29,8 @@ buildGraph numK setx = buildGr . filtCxts . cleanzip $ gcontexts
 
 getUnDirSucc
   :: Int
-  -> H.Vector Double
-  -> V.Vector (H.Vector Double)
+  -> U.Vector Double
+  -> V.Vector (U.Vector Double)
   -> Maybe (Adj Double)
 getUnDirSucc numK pt setx = case selectK numK pt setx of
                              Just x -> Just . V.toList
@@ -48,11 +48,11 @@ capTrees grp = fmap $ V.map (V.tail . V.fromList
                               . flip spTree grp)
 
 shakeNodes
-  :: V.Vector (Maybe (V.Vector (Int, H.Vector Double)))
+  :: V.Vector (Maybe (V.Vector (Int, U.Vector Double)))
   -> V.Vector (Maybe (V.Vector Int))
 shakeNodes = V.map (fmap $ V.map fst)
 
 shakePoints
-  :: V.Vector (Maybe (V.Vector (Int, H.Vector Double)))
-  -> V.Vector (Maybe (V.Vector (H.Vector Double)))
+  :: V.Vector (Maybe (V.Vector (Int, U.Vector Double)))
+  -> V.Vector (Maybe (V.Vector (U.Vector Double)))
 shakePoints = V.map (fmap $ V.map snd)
