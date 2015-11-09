@@ -3,5 +3,15 @@
 /cabal.sandbox.config
 /normcoords-*:*.png
 /normcoords-*:*.txt
-
+/*.txt
+/*.png
+/src/*.png
+/src/*.ps
+/src/*.txt
+/src/deprecatedcode
+/src/*.hi
+/src/*.hp
+/src/*.aux
+/src/*.o
+/src/Main
 

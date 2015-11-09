@@ -1,17 +1,16 @@
 import           Control.Monad
 import           Data.Char (isNumber)
-import           Data.Graph.Inductive
-import           Data.List (genericLength)
-import           Data.Maybe
-import           Data.Vector as V hiding ((++),concatMap,zip,or,foldr,all,null)
-import qualified Data.Vector.Unboxed as U hiding ((++),concatMap,zip,or,foldr,all,null)
+import qualified Data.Graph.Inductive as G
+import           Data.List hiding ((++),head,last)
+import           Data.Vector as V hiding ((++),concatMap,zip,or,foldr,all,null,head,last)
+import qualified Data.Vector.Unboxed as U hiding (concatMap,or,foldr,all,null)
 import           GraphBuilder
 import           Graphics.Rendering.Chart.Backend.Cairo
 import           Graphics.Rendering.Chart.Easy
 import           InterpolationAlgorithms
+import           NearestNeighbor
 import           Numeric.LinearAlgebra as L
 import           Numeric.LinearAlgebra.HMatrix as H
-import           PCA
 import           System.Environment
 import           System.FilePath.Posix
 import           System.Posix.Files
@@ -56,28 +55,11 @@ procMNIST selection mat = images
     eqfns  = [(==x) | x <- selection]
     mSel f x = f  ((+ (-1)) $ cols x) x
 
-pp2DResults' :: Show a => FilePath -> [a] -> IO ()
-pp2DResults' file xs = writeFile file . transPairLine . getPairs $ xs
+pp2DResults' :: Show a => FilePath -> [(a,a)] -> IO ()
+pp2DResults' file xs = writeFile file . transPairLine $ xs
   where
     transPairLine = concatMap
-                (\x -> show (fst x) ++ " " ++ show (snd x) ++ "\n")
-
-getPairs :: [t] -> [(t, t)]
-getPairs []       = []
-getPairs [x]      = [(x,x)]
-getPairs [x,y]    = [(x,y)]
-getPairs (x:y:xs) = (x,y):getPairs xs
-
-runAnalysis
-  :: V.Vector (U.Vector Double)
-  -> Int
-  -> Gr () Double
-  -> Int
-  -> Maybe (V.Vector (Double, Double))
-runAnalysis imgs numK grp = gradInterpolation grp verts pts mats
- where
-   nbds               = getPcaNbds numK imgs
-   (verts, pts, mats) = (,,) <$> shakeNodes <*> shakePoints <*> getBases $ nbds
+                (\x -> show (fst x) Prelude.++ " " Prelude.++ show (snd x) Prelude.++ "\n")
 
 main :: IO ()
 main =
@@ -89,36 +71,30 @@ main =
                    then liftM (procMNIST [4]) $ L.loadMatrix file
                    else L.loadMatrix file
      let nbds =  if ((== (3 :: Integer)) . genericLength) args
-
                  then let val = Prelude.tail args
                        in if Prelude.all intCheck val && gtZero val
                            then val
-                           else error (errorMsg1 ++ usage)
-                  else error (errorMsg2 ++ usage)
-     let images = V.map (U.fromList . L.toList)
-                  . V.fromList . H.toRows $ rawImages
-     let graph  = buildGraph
-                     (read $ Prelude.head nbds :: Int) images
+                           else error (errorMsg1 Prelude.++ usage)
+                  else error (errorMsg2 Prelude.++ usage)
+     let (len,images) = (,) <$> fst . H.size <*> V.map (U.fromList . L.toList)
+                        . V.fromList . H.toRows $ rawImages
+     let nodeEnum = [0..len-1]
+     let nearest = selectK images (read $ Prelude.head nbds :: Int) len
+     let graph = buildGraph nearest nodeEnum
      basePoint <- randomRIO (0,V.length images - 1)
-     if isConnected graph
-       then let vals = V.toList <$>
-                       runAnalysis images
-                                  (read $ (!! 1) nbds :: Int)
-                                  graph
-                                  basePoint
-                in if isJust vals
-                    then let plotFileName = "normcoords-"
-                                            ++  "-" ++ show (basePoint + 1)
-                                            ++ ":" ++ show  (V.length images)
-                                            ++ ".png"
-                             dataFileName = "normcoords-"
-                                            ++ show (basePoint + 1)
-                                            ++ ":" ++  show (V.length images)
-                                            ++ ".txt"
-                     in  toFile def plotFileName (do
-                         layout_title .= "Normal Coordinates"
-                         setColors [opaque red]
-                         plot (points "points" $ fromJust vals))
-                         >> pp2DResults' dataFileName (fromJust vals)
-                    else putStrLn "There is nothing to plot."
+     if G.isConnected graph
+        then let results = let res' = gradInterpolation graph images 2 nearest basePoint
+                                in Prelude.map ((,) <$> head <*> last) res' -- two dimensional
+                 in let plotFileName = "normcoords-"
+                                       ++  "-" ++ show (basePoint + 1)
+                                       ++ ":" ++ show  (V.length images)
+                                       ++ ".png"
+                        dataFileName = "normcoords-"
+                                       ++ show (basePoint + 1)
+                                       ++ ":" ++  show (V.length images)
+                                       ++ ".txt"
+                    in  toFile def plotFileName (do layout_title .= "Normal Coordinates"
+                                                    setColors [opaque red]
+                                                    plot (points "points" results))
+                        >> pp2DResults' dataFileName results
        else putStrLn graphMsg1

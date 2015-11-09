@@ -1,57 +1,41 @@
 module InterpolationAlgorithms
-(gradInterpolation)
+  (gradInterpolation)
   where
 
-import           Control.Monad
+import           Control.Monad (join)
 import           Data.Graph.Inductive
-import           Data.Maybe
+import qualified Data.Graph.Inductive.PatriciaTree as GP
 import qualified Data.Vector as V
 import qualified Data.Vector.Storable as S
-import           GraphBuilder
-import qualified Numeric.LinearAlgebra as L
-import qualified Numeric.LinearAlgebra.HMatrix as H
 import qualified Data.Vector.Unboxed as U
+import qualified Numeric.LinearAlgebra as L
+import           PCA
 
-getQuadCoeffs
-  :: V.Vector (V.Vector Double)
-  -> V.Vector (H.Vector Double)
-  -> V.Vector (H.Vector Double)
-getQuadCoeffs interps coeffs = V.fromList . H.toColumns
-                               . L.linearSolveLS buildRect $ depv
+getQuadCoeffs :: L.Matrix L.R -> [[L.R]] -> L.Matrix L.R
+getQuadCoeffs ptdists projs = L.linearSolveLS (buildRect projs) ptdists
   where
-    depv           = H.fromRows . V.toList
-                     . V.map (S.fromList . V.toList) $ interps
-    buildRect      = H.fromRows . V.toList . V.map rowbuilder $ coeffs
-    rowbuilder cur = (S.++)
-                     ((S.++) (S.fromList [1]) cur)
-                     (H.flatten $ H.outer cur cur)
+    buildRect = L.fromRows . map rowBuilder
+    rowBuilder rw = L.vjoin[1,L.vector rw,L.flatten . join L.outer . L.vector $ rw]
 
 gradInterpolation
-  :: Gr () Double
-     -> V.Vector (Maybe (V.Vector Node))
-     -> V.Vector (Maybe (V.Vector (U.Vector Double)))
-     -> V.Vector (Maybe (H.Matrix Double))
-     -> Int
-     -> Maybe (V.Vector (Double, Double))
-gradInterpolation grp verts pts mats num = convertToTuple . nodeGrad $ num
+  :: GP.Gr () Double
+  -> V.Vector (U.Vector Double)
+  -> Int
+  -> (Int -> ([(Double, Int)], Int, (),[(Double,Int)]))
+  -> Int
+  -> [[Double]]
+gradInterpolation graph points gradlen nearest = nodeGrad
   where
-    vars numNode       = liftM2 (\x -> V.map (H.<# H.tr x))
-                        ((V.!) mats numNode)
-                        (V.map (L.fromList . U.toList)
-                         <$> (V.!) pts numNode)
-    depvars numNode    = capTrees
-                        (grp :: Gr () Double)
-                        ((V.! numNode) verts)
-    quadCoeffs numNode = liftM2 getQuadCoeffs (depvars numNode) (vars numNode)
-    nodeGrad numNode   = if isJust . vars $ numNode
-                          then V.map
-                          (H.cmap (* (-0.5)) . S.take
-                           (H.size . V.head . fromJust . vars $ numNode)
-                           . S.tail)
-                          <$> quadCoeffs numNode
-                          else Nothing
-    convertToTuple     = liftM (V.map
-                               (\x ->
-                                  (S.head x, S.head . S.tail $
-                                             (x :: H.Vector Double))))
-   -- convertToTuple assumes the gradient is two dimensional, for now!!!
+    projections pt = let vals = nbds pt
+                         themat = getCov gradlen (L.fromRows vals)
+                     in foldr ((:) . L.toList . (L.#>) themat) [] vals
+    dists pt = case nearest pt of
+                 (val,_,_,_) -> map (L.vector . map (snd . head . unLPath) . tail . flip spTree graph . snd)  val
+    quadCoeffs pt = getQuadCoeffs
+                    (L.fromRows  $ dists pt)
+                    (projections pt)
+    nbds = Prelude.map (S.fromList . U.toList . V.unsafeIndex points) . nIndices
+    nIndices pt = case nearest pt of
+                    (val,_,_,_) -> map snd val
+    nodeGrad pt = let ws = L.toColumns $ quadCoeffs pt L.?? (L.Range 1 1 gradlen ,L.All) /(-2)
+                  in map L.toList ws
