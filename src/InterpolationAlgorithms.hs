@@ -12,7 +12,7 @@ import qualified Numeric.LinearAlgebra as L
 import           PCA
 
 getQuadCoeffs :: L.Matrix L.R -> [[L.R]] -> L.Matrix L.R
-getQuadCoeffs ptdists projs = L.linearSolveLS (buildRect projs) ptdists
+getQuadCoeffs ptdists projs = (L.<\>) (buildRect projs) ptdists
   where
     buildRect = L.fromRows . map rowBuilder
     rowBuilder rw = L.vjoin[1,L.vector rw,L.flatten . join L.outer . L.vector $ rw]

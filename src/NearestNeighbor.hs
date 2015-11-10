@@ -14,7 +14,7 @@ selectK
   :: V.Vector (U.Vector Double)
   -> Int -> Int -> Int
   -> ([(Double,Int)],Int,(),[(Double,Int)])
-selectK vec numK len pt = if numK > 1
+selectK vec len numK pt = if numK > 1
                           then neighbors
                           else error "Needs moar neighbors!"
   where

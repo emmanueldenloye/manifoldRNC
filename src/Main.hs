@@ -79,11 +79,14 @@ main =
      let (len,images) = (,) <$> fst . H.size <*> V.map (U.fromList . L.toList)
                         . V.fromList . H.toRows $ rawImages
      let nodeEnum = [0..len-1]
-     let nearest = selectK images (read $ Prelude.head nbds :: Int) len
-     let graph = buildGraph nearest nodeEnum
+     let nearest = selectK images len
+     let graph = buildGraph (nearest (read $ Prelude.head nbds :: Int)) nodeEnum
      basePoint <- randomRIO (0,V.length images - 1)
+
+     -- print $ G.isConnected graph -- for testing
+
      if G.isConnected graph
-        then let results = let res' = gradInterpolation graph images 2 nearest basePoint
+        then let results = let res' = gradInterpolation graph images 2 (nearest (read $ (!! 1) nbds :: Int)) basePoint
                                 in Prelude.map ((,) <$> head <*> last) res' -- two dimensional
                  in let plotFileName = "normcoords-"
                                        ++  "-" ++ show (basePoint + 1)
