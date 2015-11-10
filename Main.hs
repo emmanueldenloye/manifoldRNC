@@ -3,11 +3,12 @@ import           Data.Char (isNumber)
 import qualified Data.Graph.Inductive as G
 import           Data.List hiding ((++),head,last)
 import           Data.Vector as V hiding ((++),concatMap,zip,or,foldr,all,null,head,last)
-import qualified Data.Vector.Unboxed as U hiding ((++),concatMap,zip,or,foldr,all,null)
+import qualified Data.Vector.Unboxed as U hiding (concatMap,or,foldr,all,null)
 import           GraphBuilder
 import           Graphics.Rendering.Chart.Backend.Cairo
 import           Graphics.Rendering.Chart.Easy
 import           InterpolationAlgorithms
+import           NearestNeighbor
 import           Numeric.LinearAlgebra as L
 import           Numeric.LinearAlgebra.HMatrix as H
 import           System.Environment
@@ -54,8 +55,8 @@ procMNIST selection mat = images
     eqfns  = [(==x) | x <- selection]
     mSel f x = f  ((+ (-1)) $ cols x) x
 
-pp2DResults' :: Show a => FilePath -> [a] -> IO ()
-pp2DResults' file xs= writeFile file . transPairLine . getPairs $ xs
+pp2DResults' :: FilePath -> [(Double,Double)] -> IO ()
+pp2DResults' file xs = writeFile file . transPairLine $ xs
   where
     transPairLine = concatMap
                 (\x -> show (fst x) ++ " " ++ show (snd x) ++ "\n")

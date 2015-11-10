@@ -55,7 +55,7 @@ procMNIST selection mat = images
     eqfns  = [(==x) | x <- selection]
     mSel f x = f  ((+ (-1)) $ cols x) x
 
-pp2DResults' :: Show a => FilePath -> [(a,a)] -> IO ()
+pp2DResults' :: FilePath -> [(Double,Double)] -> IO ()
 pp2DResults' file xs = writeFile file . transPairLine $ xs
   where
     transPairLine = concatMap
