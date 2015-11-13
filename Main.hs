@@ -71,7 +71,6 @@ main =
                    then liftM (procMNIST [4]) $ L.loadMatrix file
                    else L.loadMatrix file
      let nbds =  if ((== (3 :: Integer)) . genericLength) args
-
                  then let val = Prelude.tail args
                        in if Prelude.all intCheck val && gtZero val
                            then val
