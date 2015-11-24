@@ -11,9 +11,9 @@ accurate, algorithms/data structures for necessary speed boosts. This
 will be updated around the clock and this document will reflect the
 activity.
 
-Update (Oct 29, 2015) : Added the PDF (brun2005fast.pdf) that outlines/informs this implementation.
+**Update** (Oct 29, 2015) : Added the PDF (brun2005fast.pdf) that outlines/informs this implementation.
 
-Update (Nov 10, 2015) : I have made some major revisions to all the code in the source directory.
+**Update** (Nov 10, 2015) : I have made some major revisions to all the code in the source directory.
 I can say with confidence that I have optimized the code to the best of my ability. Just be mindful that
 the algorithm does have a certain limitation; to even get decent results, you have to feed the algorithm
 a very large input  (~5,000 points) and you have to ensure that the graph is connected. This is unfortunately

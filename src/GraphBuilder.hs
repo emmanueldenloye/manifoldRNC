@@ -1,6 +1,6 @@
 module GraphBuilder
-       (buildGraph
-       ) where
+       (buildGraph)
+       where
 
 import           Data.Graph.Inductive
 import qualified Data.Graph.Inductive.PatriciaTree as GP

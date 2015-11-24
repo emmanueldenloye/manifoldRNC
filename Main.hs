@@ -1,9 +1,12 @@
 import           Control.Monad
 import           Data.Char (isNumber)
 import qualified Data.Graph.Inductive as G
+import           Data.IntMap (IntMap)
+import qualified Data.IntMap as IntMap
 import           Data.List hiding ((++),head,last)
 import           Data.Vector as V hiding ((++),concatMap,zip,or,foldr,all,null,head,last)
 import qualified Data.Vector.Unboxed as U hiding (concatMap,or,foldr,all,null)
+import           GraphAlgorithms
 import           GraphBuilder
 import           Graphics.Rendering.Chart.Backend.Cairo
 import           Graphics.Rendering.Chart.Easy
@@ -79,25 +82,28 @@ main =
      let (len,images) = (,) <$> fst . H.size <*> V.map (U.fromList . L.toList)
                         . V.fromList . H.toRows $ rawImages
      let nodeEnum = [0..len-1]
-     let nearest = selectK images len
-     let graph = buildGraph (nearest (read $ Prelude.head nbds :: Int)) nodeEnum
+     -- let nearest = selectK images len
+     let nearestTest = selectKtest images len
+     -- let graph = buildGraph (nearest (read $ Prelude.head nbds :: Int)) nodeEnum
+     let basePoint = 0 :: Int
+     let graphMap = foldr (\val -> IntMap.insert val (snd . nearestTest (read $ Prelude.head nbds :: Int) $ val)) IntMap.empty nodeEnum
      basePoint <- randomRIO (0,V.length images - 1)
-
+     putStrLn ""
      -- print $ G.isConnected graph -- for testing
 
-     if G.isConnected graph
-        then let results = let res' = gradInterpolation graph images 2 (nearest (read $ (!! 1) nbds :: Int)) basePoint
-                                in Prelude.map ((,) <$> head <*> last) res' -- two dimensional
-                 in let plotFileName = "normcoords-"
-                                       ++  "-" ++ show (basePoint + 1)
-                                       ++ ":" ++ show  (V.length images)
-                                       ++ ".png"
-                        dataFileName = "normcoords-"
-                                       ++ show (basePoint + 1)
-                                       ++ ":" ++  show (V.length images)
-                                       ++ ".txt"
-                    in  toFile def plotFileName (do layout_title .= "Normal Coordinates"
-                                                    setColors [opaque red]
-                                                    plot (points "points" results))
-                        >> pp2DResults' dataFileName results
-       else putStrLn graphMsg1
+     -- if G.isConnected graph
+     --    then let results = let res' = gradInterpolation graph images 2 (nearest (read $ (!! 1) nbds :: Int)) basePoint
+     --                            in Prelude.map ((,) <$> head <*> last) res' -- two dimensional
+     --             in let plotFileName = "normcoords-"
+     --                                   ++  "-" ++ show (basePoint + 1)
+     --                                   ++ ":" ++ show  (V.length images)
+     --                                   ++ ".png"
+     --                    dataFileName = "normcoords-"
+     --                                   ++ show (basePoint + 1)
+     --                                   ++ ":" ++  show (V.length images)
+     --                                   ++ ".txt"
+     --                in  toFile def plotFileName (do layout_title .= "Normal Coordinates"
+     --                                                setColors [opaque red]
+     --                                                plot (points "points" results))
+     --                    >> pp2DResults' dataFileName results
+     --   else putStrLn graphMsg1
