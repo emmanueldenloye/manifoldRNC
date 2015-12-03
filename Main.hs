@@ -20,7 +20,7 @@ main = do
 
   ((mat,points',inds'),basePoint) <- do
                      let f' = selectK images len
-                     basePoint' <- randomRIO (0,0 :: Int) :: IO Int
+                     basePoint' <- randomRIO (0,len :: Int) :: IO Int
                      return $ (,)
                        (buildShortestPaths f' nbds basePoint')
                        basePoint'

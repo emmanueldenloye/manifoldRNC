@@ -5,6 +5,7 @@
 /normcoords-*:*.txt
 /*.txt
 /*.png
+/*.hs~
 /.gitignore~
 /manifoldRNC.cabal~
 /TAGS
