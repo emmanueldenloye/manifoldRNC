@@ -1,37 +1,19 @@
 module NearestNeighbor
-       ( selectK
-       , selectKtest
-       , selectKRepa
-       ) where
+       (selectK) where
 
 import           Control.Monad (join)
-import           Control.Monad.ST
+import           Control.Monad.ST (runST)
 import qualified Data.Vector as V
-import qualified Data.Vector.Algorithms.Intro as VA
-import qualified Data.Vector.Generic as G
+import qualified Data.Vector.Algorithms.Intro as VA (sortBy)
+import qualified Data.Vector.Generic as G (unsafeThaw,unsafeFreeze)
 import qualified Data.Vector.Unboxed as U
-import Data.IntMap.Strict (IntMap)
-import qualified Data.IntMap.Strict as IntMap
 
 selectK
   :: V.Vector (U.Vector Double)
   -> Int -> Int -> Int
-  -> ([(Double,Int)],Int,(),[(Double,Int)])
-selectK vec len numK pt = if numK > 1
-                          then neighbors
-                          else error "Needs moar neighbors!"
-  where
-    neighbors = mkContexts . U.take numK . vsort $ U.map combLazy indices
-    combLazy = metricSpaceDistBuild vec euclidDist pt
-    indices = (U.++) (U.enumFromN 0 (pt-1)) (U.enumFromN (pt+1) (len-1-pt))
-    mkContexts = (\a -> (a,pt,(),a)) . U.toList
-
-selectKRepa
-  :: V.Vector (U.Vector Double)
-  -> Int -> Int -> Int
   -> (U.Vector Double, V.Vector (U.Vector Double),U.Vector Int)
-selectKRepa vec len numK pt = if numK > 1
-                          then (val,points',inds')
+selectK vec len numK pt = if numK > 1
+                          then (dists',points',inds')
                           else error "Needs moar neighbors!"
   where
     neighbors = U.map (uncurry $ flip (,)) . U.take numK . vsort $ U.map combLazy indices
@@ -39,7 +21,7 @@ selectKRepa vec len numK pt = if numK > 1
     indices = (U.++) (U.enumFromN 0 (pt-1)) (U.enumFromN (pt+1) (len-1-pt))
     points' = U.foldr (\x acc -> V.snoc acc $ V.unsafeIndex vec $ fst x) V.empty neighbors
     inds' = U.map fst neighbors
-    val = U.accumulate (\_ b -> b) dumbVector neighbors
+    dists' = U.accumulate (\_ b -> b) dumbVector neighbors
     highnum = 1/0 :: Double
     dumbVector = (if pt == 0
                   then U.empty
@@ -48,22 +30,6 @@ selectKRepa vec len numK pt = if numK > 1
                  U.singleton 0
                  U.++
                  U.replicate (len-1-pt) highnum
-
-
-selectKtest
-  :: V.Vector (U.Vector Double)
-  -> Int -> Int -> Int
-  -> IntMap Double
-selectKtest vec len numK pt = if numK > 1
-                          then neighbors
-                          else error "Needs moar neighbors!"
-  where
-    neighbors = mkMap . U.toList . U.take numK . vsort $ U.map combLazy indices
-    combLazy = metricSpaceDistBuild vec euclidDist pt
-    indices = (U.++) (U.enumFromN 0 (pt-1)) (U.enumFromN (pt+1) (len-1-pt))
-    mkMap = fixmap . createMap
-    createMap = IntMap.mapKeys (+1) . IntMap.fromList . map (uncurry $ flip (,))
-    fixmap = id -- Work on this part later. You will need to make sure that the IntMap represents an undirected graph. (It is currently a directed graph.)
 
 vsort :: U.Vector (Double,Int) -> U.Vector (Double,Int)
 vsort v = runST $ do m <- G.unsafeThaw v
