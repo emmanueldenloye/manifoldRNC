@@ -20,20 +20,20 @@ buildShortestPaths
   -> (L.Matrix Double, V.Vector (U.Vector Double), [Int])
 buildShortestPaths nbdfunc nbds basePoint = res
   where
-    (len,points',inds') = (\(a,b,c) -> (U.length a,b,sort $ U.toList c))
+    (len,points,inds) = (\(a,b,c) -> (U.length a,b,sort $ U.toList c))
                           . nbdfunc (snd nbds) $ basePoint
-    sp' = shortestPaths repa'
-    repa' = fromUnboxed (Z :. len :. len)
+    sp = shortestPaths repa
+    repa = fromUnboxed (Z :. len :. len)
             . U.concatMap ((\(a,_,_) -> a) . nbdfunc (fst nbds))
             $ nodeEnum :: Graph U
     nodeEnum = U.enumFromN (0 :: Int) len
-    res = (L.matrix len . Data.Array.Repa.toList $ sp', points', inds')
+    res = (L.matrix len . Data.Array.Repa.toList $ sp, points, inds)
 
 getConnected :: L.Matrix Double -> IO (L.Matrix Double)
 getConnected v = return $ let row' = extract' v
-                          in (if anyInf row'
+                          in if anyInf row'
                               then error "The graph is not connected."
-                              else v)
+                              else v
   where
     extract' = flip (L.??) (L.Take 1,L.All) :: L.Matrix Double -> L.Matrix Double
     anyInf = S.any ((1/0 :: Double) ==) . L.flatten
@@ -49,6 +49,5 @@ shortestPaths g0 = runIdentity $ go g0 0
      where
        sp (Z:.i:.j) = min
                       (g Data.Array.Repa.! (Z:.i:.j))
-                      (g Data.Array.Repa.!
-                       (Z:.i:.k)
+                      (g Data.Array.Repa.! (Z:.i:.k)
                        + g Data.Array.Repa.! (Z:.k:.j))

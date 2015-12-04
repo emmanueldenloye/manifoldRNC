@@ -19,7 +19,9 @@ selectK vec len numK pt = if numK > 1
     neighbors = U.map (uncurry $ flip (,)) . U.take numK . vsort $ U.map combLazy indices
     combLazy = metricSpaceDistBuild vec euclidDist pt
     indices = (U.++) (U.enumFromN 0 (pt-1)) (U.enumFromN (pt+1) (len-1-pt))
-    points' = U.foldr (\x acc -> V.snoc acc $ V.unsafeIndex vec $ fst x) V.empty neighbors
+    points' = U.foldr
+              (\x acc -> V.snoc acc $ V.unsafeIndex vec $ fst x)
+              V.empty neighbors
     inds' = U.map fst neighbors
     dists' = U.accumulate (\_ b -> b) dumbVector neighbors
     highnum = 1/0 :: Double
