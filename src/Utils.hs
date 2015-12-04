@@ -69,8 +69,8 @@ getReqMatrix file = if (snd . splitFileName $ file) == "mnist.txt"
                then liftM (procMNIST [4]) $ loadMatrix file
                else loadMatrix file
 
-convertImages :: Matrix Double -> V.Vector (U.Vector Double)
-convertImages = V.map (U.fromList . L.toList) . V.fromList . L.toRows
+convertDataset :: Matrix Double -> V.Vector (U.Vector Double)
+convertDataset = V.map (U.fromList . L.toList) . V.fromList . L.toRows
 
-getLength :: Matrix Double -> Int
-getLength = fst . L.size
+rowSize :: Matrix Double -> Int
+rowSize = L.rows

@@ -13,12 +13,12 @@ main = do
   matrix <- getReqMatrix file
 
   let nbds = checkArgs args
-      dataset = convertImages matrix
-      len = getLength matrix
-      f = selectK dataset len
+      dataset = convertDataset matrix
+      rowsize = rowSize matrix
+      f = selectK dataset rowsize
 
-  basePoint <- randomRIO (0,len :: Int) :: IO Int
+  basePoint <- randomRIO (0,rowsize :: Int) :: IO Int
   let (mat, points, inds) = buildShortestPaths f nbds basePoint
 
   res <- getDerivatives' points inds <$> getConnected mat
-  plotAndSave2D' file len res basePoint
+  plotAndSave2D' file rowsize res basePoint
