@@ -17,7 +17,7 @@ main = do
       rowsize = rowSize matrix
       f = selectK dataset rowsize
 
-  basePoint <- randomRIO (0,rowsize :: Int) :: IO Int
+  basePoint <- randomRIO (0,rowsize-1 :: Int) :: IO Int
   let (mat, points, inds) = buildShortestPaths f nbds basePoint
 
   res <- getDerivatives' points inds <$> getConnected mat
