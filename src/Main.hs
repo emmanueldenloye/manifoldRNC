@@ -1,24 +1,44 @@
-import DenseGraph
-import InterpolationAlgorithms
-import NearestNeighbor
-import Plots
-import System.Environment
-import System.Random
-import Utils
+{-#LANGUAGE BangPatterns#-}
+
+import           Control.Arrow
+import           Control.DeepSeq
+import           Data.Graph.Inductive
+import           Data.Graph.Inductive.PatriciaTree as GP
+import           Data.List (foldl',sortOn)
+import qualified Data.Vector.Storable as S
+import           GraphBuilder
+import           InterpolationAlgorithms
+import           Numeric.LinearAlgebra (size,rank,det,meanCov) -- for testing
+import           Numeric.LinearAlgebra.Data
+import           Numeric.LinearAlgebra.HMatrix
+-- import           Plots
+import           System.Environment
+import           Utils
 
 main :: IO ()
 main = do
   args <- getArgs
   file <- checkFile args
-  matrix <- getReqMatrix file
-
   let nbds = checkArgs args
-      dataset = convertDataset matrix
-      rowsize = rowSize matrix
-      f = selectK dataset rowsize
 
-  basePoint <- randomRIO (0,rowsize-1 :: Int) :: IO Int
-  let (mat, points, inds) = buildShortestPaths f nbds basePoint
+  matrix' <- getReqMatrix file
 
-  res <- getDerivatives' points inds <$> getConnected mat
-  plotAndSave2D' file rowsize res basePoint
+      -- graph' = foldr joinContext (empty :: GP.Gr () Double) . theContexts (fst nbds) $ matrix'
+      -- sDists = map (`shortestDists` graph') [0..rsize-1 :: Int]
+
+  -- print . (head &&& length) $ theContexts (fst nbds) matrix'
+  let ectxs = theContextsAndDists nbds basePoint matrix'
+      basePoint = 0 -- for testing
+      graph = force $ foldr (joinContext . force) (empty :: GP.Gr () Double) $ fst ectxs
+      graphShortDists = shortDistMat rsize . shortestDists rsize $ graph
+      rsize = rowSize matrix'
+
+  print . fst . eigSH . trustSym . snd . meanCov . snd $ ectxs
+
+  print . size $ graphShortDists
+
+    -- in if isConnected graph
+    --     then print $ nodes graph
+    --    else error "Continue later!"
+
+  -- print $ checkSymRowsCols . shortDistMat rsize $ fst ectxs -- checkSymRowsCols used for debugging. It is in GraphBuilder.hs.

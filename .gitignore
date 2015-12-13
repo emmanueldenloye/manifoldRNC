@@ -1,6 +1,8 @@
 /.cabal-sandbox/
 /dist/
 /cabal.sandbox.config
+/cabal.config
+/.cabal.config
 /normcoords-*:*.png
 /normcoords-*:*.txt
 /*.txt
