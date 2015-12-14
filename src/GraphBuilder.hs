@@ -7,6 +7,7 @@ module GraphBuilder
        ,shortestDists
        ,joinContext
        ,EContext(..)
+       ,EShortDists(..)
        ,theContextsAndDists
        )
        where
@@ -31,24 +32,22 @@ data EContext = EContext {vertex     :: {-#UNPACK#-} !Int
 
 instance NFData EContext
 
-instance NFData EShortDists
-
 data EShortDists = EShortDists {vertex' :: {-#UNPACK#-} !Int
                                , dists' :: {-#UNPACK#-} !(Vector Double)
                                } deriving (Show,Generic)
 
+instance NFData EShortDists
+
 shortDistMat :: Int
              -> [EShortDists]
              -> Matrix Double
-shortDistMat size' !sdists = let mat = konst 0 (size',size') :: Matrix Double
+shortDistMat size' !sdists = let mat = konst 0 (length',size') :: Matrix Double
+                                 length' = length sdists
                              in runST $ do m <- thawMatrix mat
-                                           mapM_ (`setRowAndCol` m) sdists
+                                           mapM_ (`setRow` m) sdists
                                            freezeMatrix m
   where
-    setRowAndCol (EShortDists pt dvals) mat = do setMatrix mat pt pt
-                                                   (asRow $ S.drop pt dvals)
-                                                 setMatrix mat pt pt
-                                                   (asColumn $ S.drop pt dvals)
+    setRow (EShortDists pt dvals) mat = setMatrix mat pt 0 (asRow dvals)
 
 joinContext :: EContext -> GP.Gr () Double -> GP.Gr () Double
 joinContext (EContext pt edists vs) graph = let !zipped = zip (toList edists) (toList vs)
@@ -57,15 +56,18 @@ joinContext (EContext pt edists vs) graph = let !zipped = zip (toList edists) (t
 matD2 :: Matrix Double -> Matrix Double
 matD2 = join pairwiseD2
 
-theContextsAndDists :: (Int,Int)
+theContextsAndDists :: (Int,Int) -- ^ Graph neighborhood size and PCA neighborhood size
                     -> Int
                     -> Matrix Double
-                    -> ([EContext],Matrix Double)
+                    -> ([EContext], Matrix Double,[Int])
 theContextsAndDists (n1,n2) bpt mat = (makeContexts . theNearest n1 . matD2 $ mat
-                                      ,  (\a -> mat ?? (Pos a,All)) . idxs . map (toEnum . snd) . (!! bpt) . theNearest n2 . matD2 $ mat)
+                                      , (\a -> mat ?? (Pos a,All)) . idxs $ idxs'',idxs''')
   where
     makeContexts = zipWith makeContext [0 :: Int ..] . map unzip
     makeContext a (b,c) = EContext a (fromList b) (fromList c)
+    idxs'' = map (toEnum . snd) idxs'
+    idxs' = (!! bpt) . theNearest n2 . matD2 $ mat
+    idxs''' = map snd idxs'
 
 theNearest :: Int -> Matrix Double -> [[(Double,Int)]]
 theNearest n = filterKNearest . findNearestWithInd
@@ -75,10 +77,9 @@ theNearest n = filterKNearest . findNearestWithInd
     helper1 in' = uncurry zip (map toList (T.fst in'), map (map fromEnum . toList) (T.snd in'))
     helper2 = strUnzip . map (\x -> (T.:!:) (sortVector x) (sortIndex x)) . toRows
 
-shortestDists :: Int -> GP.Gr () Double -> [EShortDists]
-shortestDists len g = map (\x -> clean x . sortIndDumpDist . makeList $ x) list'
+shortestDists :: [Int] -> GP.Gr () Double -> [EShortDists]
+shortestDists inds g = map (\x -> clean x . sortIndDumpDist . makeList $ x) inds
   where
-    list' = [0 :: Int ..len-1]
     clean x' a = EShortDists x' $ fromList a
     sortIndDumpDist = map T.snd . sortOn T.fst
     makeList = map (Prelude.uncurry (T.:!:)) . join . map (take 1 . unLPath) . flip spTree g
