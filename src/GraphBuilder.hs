@@ -12,6 +12,7 @@ module GraphBuilder
 
 import           Control.DeepSeq (NFData(..))
 import           Control.Monad (join)
+import           Control.Monad.ST
 import           Data.Graph.Inductive
 import qualified Data.Graph.Inductive.PatriciaTree as GP
 import           Data.List (sortOn)
@@ -19,12 +20,12 @@ import qualified Data.Strict.Tuple as T hiding (uncurry)
 import           Foreign.C (CInt)
 import           GHC.Generics
 import           Numeric.LinearAlgebra
+import           Numeric.LinearAlgebra.Devel
 
 data EContext = EContext {vertex     :: {-#UNPACK#-} !Int
                          , dists     :: {-#UNPACK#-} !(Vector Double)
                          , neighbors :: {-#UNPACK#-} !(Vector Int)
                          } deriving (Show,Generic)
-
 instance NFData EContext
 
 data EShortDists = EShortDists {vertex' :: {-#UNPACK#-} !Int
@@ -33,8 +34,14 @@ data EShortDists = EShortDists {vertex' :: {-#UNPACK#-} !Int
 
 instance NFData EShortDists
 
-shortDistMat :: [EShortDists] -> Matrix Double
-shortDistMat edists = fromRows . map (\(EShortDists _ vals) -> vals) $ edists
+shortDistMat :: Int -> [EShortDists] -> Matrix Double
+shortDistMat size' !sdists = let mat = konst 0 (length',size') :: Matrix Double
+                                 length' = length sdists
+                             in runST $ do m <- thawMatrix mat
+                                           mapM_ (`setRow` m) $ zip sdists [0..]
+                                           freezeMatrix m
+  where
+    setRow (EShortDists _ vals,pt) mat = setMatrix mat pt 0 $ asRow vals
 
 joinContext :: EContext -> GP.Gr () Double -> GP.Gr () Double
 joinContext (EContext pt edists vs) graph = let !zipped = zip (toList edists) (toList vs)

@@ -57,7 +57,7 @@ contained in *POINTS*.
       graph = force . foldr (joinContext . force) (empty :: GP.Gr () Double) $ gctx
 
       -- Deterimne the sets of shortest distances from points *POINTS*
-      graphShortDists = shortDistMat $ shortestDists inds graph
+      graphShortDists = shortDistMat rsize $ shortestDists inds graph
 
       {- This matrix is used in the interpolation step for finding the Riemann
           normal coordinates. Please refer to the paper in the repository for
