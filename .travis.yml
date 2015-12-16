@@ -1,0 +1,10 @@
+# sudo: false
+language: haskell
+ghc: 7.10.2
+script:
+        - cabal configure --enable-tests
+        - cabal build
+        - cabal test
+install: cabal install --only-dependencies
+notifications:
+  email: true
