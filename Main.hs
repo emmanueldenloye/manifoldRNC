@@ -70,4 +70,4 @@ contained in *POINTS*.
   -- If the graph is connected, then save the results of the analysis.
   if isConnected graph
      then plotAndSave2D' file rsize basePoint nbds res'
-     else error "The graph is not connected"
+     else error "The graph is not connected."
