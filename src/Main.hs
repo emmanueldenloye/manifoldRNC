@@ -1,13 +1,13 @@
-import Control.DeepSeq
-import Data.Graph.Inductive
-import Data.Graph.Inductive.PatriciaTree as GP
-import GraphBuilder
-import InterpolationAlgorithms
-import System.Environment
-import Numeric.LinearAlgebra (size)
-import System.Random (randomRIO)
-import Utils
-import Plots
+import           Control.DeepSeq
+import           Data.Graph.Inductive
+import           Data.Graph.Inductive.PatriciaTree as GP
+import           GraphBuilder
+import           InterpolationAlgorithms
+import           Numeric.LinearAlgebra             (size)
+import           Plots
+import           System.Environment
+import           System.Random                     (randomRIO)
+import           Utils
 
 main :: IO ()
 main = do

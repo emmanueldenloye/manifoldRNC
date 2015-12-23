@@ -26,6 +26,7 @@ data EContext = EContext {vertex     :: {-#UNPACK#-} !Int
                          , dists     :: {-#UNPACK#-} !(Vector Double)
                          , neighbors :: {-#UNPACK#-} !(Vector Int)
                          } deriving (Show,Generic)
+
 instance NFData EContext
 
 data EShortDists = EShortDists {vertex' :: {-#UNPACK#-} !Int
@@ -45,7 +46,7 @@ shortDistMat size' !sdists = let mat = konst 0 (length',size') :: Matrix Double
 
 joinContext :: EContext -> GP.Gr () Double -> GP.Gr () Double
 joinContext (EContext pt edists vs) graph = let !zipped = zip (toList edists) (toList vs)
-                                              in (zipped,pt,(),zipped) & graph
+                                                                   in (zipped,pt,(),zipped) & graph
 
 matD2 :: Matrix Double -> Matrix Double
 matD2 = join pairwiseD2

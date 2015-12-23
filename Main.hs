@@ -1,13 +1,13 @@
-import Control.DeepSeq
-import Data.Graph.Inductive
-import Data.Graph.Inductive.PatriciaTree as GP
-import GraphBuilder
-import InterpolationAlgorithms
-import System.Environment
-import Numeric.LinearAlgebra (size)
-import System.Random (randomRIO)
-import Utils
-import Plots
+import           Control.DeepSeq
+import           Data.Graph.Inductive
+import           Data.Graph.Inductive.PatriciaTree as GP
+import           GraphBuilder
+import           InterpolationAlgorithms
+import           Numeric.LinearAlgebra             (size)
+import           Plots
+import           System.Environment
+import           System.Random                     (randomRIO)
+import           Utils
 
 main :: IO ()
 main = do
@@ -45,7 +45,7 @@ representative point and every point in the neighborhood set.
 
 {-The variable *GCTX*, is a list of contexts for the graph. Essentially,
 each context contains the nodes leaving and entering a given node. You
-may wish to consult the FGL (functional Graph library) documentation
+may wish to consult the FGL (Functional Graph Library) documentation
 for more information. The variable *POINTS* is a list of the K nearest
 neighbors from *BASEPOINT*, a randomnly chosen point in the
 dataset. The variable *INDS* is a list of the indices of the points

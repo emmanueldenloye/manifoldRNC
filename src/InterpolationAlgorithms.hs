@@ -2,10 +2,10 @@ module InterpolationAlgorithms
   (riemannNormCoord,estimateGrad)
   where
 
-import Control.Monad
-import Control.Monad.ST
-import Numeric.LinearAlgebra
-import Numeric.LinearAlgebra.Devel
+import           Control.Monad
+import           Control.Monad.ST
+import           Numeric.LinearAlgebra
+import           Numeric.LinearAlgebra.Devel
 
 consInterpMat :: Int
               -> Int
@@ -35,7 +35,7 @@ estimateGrad nums gradlen pcaMat = mat
 riemannNormCoord :: Matrix Double -> Matrix Double -> [Vector Double]
 riemannNormCoord res mat = toColumns leastsquaresSol
   where
-    leastsquaresSol = cmap (* (-0.5)) $ (res <\> mat) ?? (Pos $ idxs [2,3],All)
+    leastsquaresSol = cmap (* (-0.5)) $ (res <\> mat) ?? (Pos $ idxs [1,2],All)
 
 getPCAEigVec :: Matrix Double -> Matrix Double
 getPCAEigVec = snd . eigSH . trustSym . snd . meanCov

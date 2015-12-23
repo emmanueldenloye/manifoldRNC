@@ -31,7 +31,6 @@ plotAndSave2D' file len basePoint (gn,pn) results =
    dataFileName = baseOutputName ++ ".txt"
    results' = map ((\[a,b] -> (a,b)) . L.toList) results
 
-
 chartPlot2D results = do layout_title .= "Normal Coordinates"
                          setColors [opaque red]
                          plot (points "points" results)

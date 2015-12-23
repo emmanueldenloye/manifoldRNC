@@ -52,5 +52,5 @@ executable manifoldRNC
                      , strict
                      , unix
                      , vector
-  ghc-options:         -O2 -fllvm -funbox-strict-fields -Wall "-with-rtsopts=-N"
+  ghc-options:         -O2 -fllvm -funbox-strict-fields -Wall
   default-language:    Haskell2010
