@@ -1,5 +1,5 @@
-{-#LANGUAGE BangPatterns#-}
-{-#LANGUAGE DeriveGeneric#-}
+{-# LANGUAGE BangPatterns  #-}
+{-# LANGUAGE DeriveGeneric #-}
 module GraphBuilder
        (shortDistMat
        ,shortestDists
@@ -10,14 +10,14 @@ module GraphBuilder
        )
        where
 
-import           Control.DeepSeq (NFData(..))
-import           Control.Monad (join)
+import           Control.DeepSeq                   (NFData (..))
+import           Control.Monad                     (join)
 import           Control.Monad.ST
 import           Data.Graph.Inductive
 import qualified Data.Graph.Inductive.PatriciaTree as GP
-import           Data.List (sortOn)
-import qualified Data.Strict.Tuple as T hiding (uncurry)
-import           Foreign.C (CInt)
+import           Data.List                         (sortOn)
+import qualified Data.Strict.Tuple                 as T hiding (uncurry)
+import           Foreign.C                         (CInt)
 import           GHC.Generics
 import           Numeric.LinearAlgebra
 import           Numeric.LinearAlgebra.Devel
@@ -42,14 +42,15 @@ shortDistMat size' !sdists = let mat = konst 0 (length',size') :: Matrix Double
                                            mapM_ (`setRow` m) $ zip sdists [0..]
                                            freezeMatrix m
   where
-    setRow (EShortDists _ vals,pt) mat = setMatrix mat pt 0 $ asRow vals
+    setRow (e,pt) mat = setMatrix mat pt 0 . asRow . dists' $ e
 
 joinContext :: EContext -> GP.Gr () Double -> GP.Gr () Double
 joinContext (EContext pt edists vs) graph = let !zipped = zip (toList edists) (toList vs)
-                                                                   in (zipped,pt,(),zipped) & graph
+                                            in (zipped,pt,(),zipped) & graph
 
 matD2 :: Matrix Double -> Matrix Double
 matD2 = join pairwiseD2
+
 
 theContextsAndDists :: (Int,Int) -- ^ Graph neighborhood size and PCA neighborhood size
                     -> Int
