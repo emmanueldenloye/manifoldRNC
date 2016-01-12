@@ -3,10 +3,13 @@ module Plots
        (plotAndSave2D')
        where
 
-import Graphics.Rendering.Chart.Backend.Cairo
-import Graphics.Rendering.Chart.Easy
-import System.FilePath (takeBaseName)
-import Numeric.LinearAlgebra as L (toList,Vector(..),size)
+-- import Data.Colour
+-- import Data.Colour.Names
+import           Graphics.Rendering.Chart.Backend.Cairo
+import           Graphics.Rendering.Chart.Easy
+import           Numeric.LinearAlgebra                  as L (Vector (..), size,
+                                                              toList)
+import           System.FilePath                        (takeBaseName)
 
 plotAndSave2D'
   :: FilePath

@@ -17,20 +17,22 @@ source-repository head
   location: git://github.com/emmanueldenloye/manifoldRNC.git
 
 library
-  ghc-options:         -O2 -Wall
+  ghc-options:         -O2 -Wall -threaded
   hs-source-dirs:      src
   exposed-modules:     GraphBuilder
                        InterpolationAlgorithms
                        Plots
                        Utils
   build-depends:       base >=4.8 && < 4.9
-                     , Chart       >= 1.3 && < 1.6
-                     , Chart-cairo >= 1.3 && < 1.6
+                     , Chart >=1.3 && <=1.5.4
+                     , Chart-cairo >=1.3 && <=1.5.4
+                     , cairo >= 0.12
                      , containers >= 0.4 && < 0.6
-                     , deepseq >= 1.4
-                     , filepath    >= 1.3 && < 1.5
+                     , deepseq >= 1.1 && < 1.5
+                     , filepath >= 1.3 && < 1.5
                      , fgl >= 5.4 && < 5.6
-                     , hmatrix     >= 0.17 && < 0.18
+                     , parallel >= 3.2.0.5 && < 3.2.1.0
+                     , hmatrix >= 0.17 && < 0.18
                      , random >= 1.0 && < 1.2
                      , strict >= 0.3
                      , unix >= 2.6 && < 2.8
@@ -43,14 +45,16 @@ executable manifoldRNC
                      , manifoldRNC
                      , Chart
                      , Chart-cairo
+                     , cairo
                      , containers
                      , deepseq
                      , fgl
                      , filepath
                      , hmatrix
+                     , parallel
                      , random
                      , strict
                      , unix
                      , vector
-  ghc-options:         -O2 -fllvm -funbox-strict-fields -Wall
+  ghc-options:         -O2 -fllvm -threaded -Wall "-with-rtsopts=-N"
   default-language:    Haskell2010

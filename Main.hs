@@ -53,8 +53,8 @@ contained in *POINTS*.
 -}
   let (gctx,points,inds) = theContextsAndDists nbds basePoint matrix'
 
-      -- Build the graph! Built from the contexts *GCTX*
-      graph = force . foldr (joinContext . force) (empty :: GP.Gr () Double) $ gctx
+      -- Build the graph from the contexts *GCTX*!
+      graph = force . foldr (joinContext . force) (empty :: GP.Gr Double Double) $ gctx
 
       -- Deterimne the sets of shortest distances from points *POINTS*
       graphShortDists = shortDistMat rsize $ shortestDists inds graph
@@ -67,7 +67,7 @@ contained in *POINTS*.
       -- The Riemann normal coordinates.
       res' = riemannNormCoord res graphShortDists
 
-  -- If the graph is connected, then save the results of the analysis.
+  -- If the graph is connected, then perform and save the results of the analysis.
   if isConnected graph
      then plotAndSave2D' file rsize basePoint nbds res'
      else error "The graph is not connected."

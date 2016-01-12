@@ -1,16 +1,16 @@
 module Utils where
 
-import           Control.Monad (ap,liftM2,liftM)
-import           Data.Char (isNumber)
-import           Data.List (genericLength)
-import qualified Data.Vector as V
-import qualified Data.Vector.Unboxed as U
-import           Numeric.LinearAlgebra (Matrix,toList,takeColumns
-                                        ,dropColumns,flatten,cols
-                                        ,loadMatrix,fromRows,toRows,cmap)
+import           Control.Monad         (ap, liftM, liftM2)
+import           Data.Char             (isNumber)
+import           Data.List             (genericLength)
+import qualified Data.Vector           as V
+import qualified Data.Vector.Unboxed   as U
+import           Numeric.LinearAlgebra (Matrix, cmap, cols, dropColumns,
+                                        flatten, fromRows, loadMatrix,
+                                        takeColumns, toList, toRows)
 import qualified Numeric.LinearAlgebra as L
-import           System.FilePath (splitFileName)
-import           System.Posix (fileExist)
+import           System.FilePath       (splitFileName)
+import           System.Posix          (fileExist)
 
 usage :: String
 usage = "Usage: ./init_present <file> <Graph nbd size> <PCA nbd size>"

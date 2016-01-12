@@ -1,9 +1,14 @@
+import           Control.Arrow
 import           Control.DeepSeq
+import           Data.Function
 import           Data.Graph.Inductive
 import           Data.Graph.Inductive.PatriciaTree as GP
+import           Data.List                         (maximumBy, sort)
 import           GraphBuilder
 import           InterpolationAlgorithms
 import           Numeric.LinearAlgebra             (size)
+import           Numeric.LinearAlgebra.Data
+import           Numeric.LinearAlgebra.Devel
 import           Plots
 import           System.Environment
 import           System.Random                     (randomRIO)
@@ -54,9 +59,9 @@ contained in *POINTS*.
   let (gctx,points,inds) = theContextsAndDists nbds basePoint matrix'
 
       -- Build the graph! Built from the contexts *GCTX*
-      graph = force . foldr (joinContext . force) (empty :: GP.Gr () Double) $ gctx
+      graph = foldr joinContext (empty :: GP.Gr Double Double) gctx
 
-      -- Deterimne the sets of shortest distances from points *POINTS*
+      -- Determine the sets of shortest distances (on manifold, approximated by the graph) from points *POINTS*
       graphShortDists = shortDistMat rsize $ shortestDists inds graph
 
       {- This matrix is used in the interpolation step for finding the Riemann
