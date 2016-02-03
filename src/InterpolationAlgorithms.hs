@@ -1,3 +1,4 @@
+{-# LANGUAGE FlexibleContexts #-}
 module InterpolationAlgorithms
   (riemannNormCoord,estimateGrad)
   where
@@ -10,13 +11,13 @@ import           Numeric.LinearAlgebra.Devel
 consInterpMat :: Int
               -> Int
               -> [Vector Double]
-              -> Matrix  Double
+              -> Matrix Double
 consInterpMat rowlen collen vecs = runST $ do
-                                    m <- thawMatrix mat
-                                    mapM_ (\(i,v) -> write' m i $ flatOuter v) vecs'
-                                    freezeMatrix m
+  m <- unsafeThawMatrix mat
+  mapM_ (\(i, v) -> write' m i $ flatOuter v) vecs'
+  unsafeFreezeMatrix m
   where
-    flatOuter vec' = vjoin[1,vec',flatten . join outer $ vec'] :: Vector Double
+    flatOuter vec' = vjoin [1, vec', flatten . join outer $ vec'] :: Vector Double
     collen' = 1 + collen + (collen * collen)
     mat = konst 0 (rowlen, collen') :: Matrix Double
     vecs' = zip [0 :: Int ..] vecs
@@ -28,14 +29,14 @@ estimateGrad :: Int
              -> Matrix Double
 estimateGrad nums gradlen pcaMat = mat
   where
-   mat = consInterpMat nums gradlen pcaMat'
-   pcaMat' = map (subVector 1 gradlen . (<# getPCAEigVec pcaMat)) matRows
-   matRows = toRows pcaMat
+    mat = consInterpMat nums gradlen pcaMat'
+    pcaMat' = map (subVector 1 gradlen . (<# getPCAEigVec pcaMat)) matRows
+    matRows = toRows pcaMat
 
 riemannNormCoord :: Matrix Double -> Matrix Double -> [Vector Double]
 riemannNormCoord res mat = toColumns leastsquaresSol
   where
-    leastsquaresSol = cmap (* (-0.5)) $ (res <\> mat) ?? (Pos $ idxs [1,2],All)
+    leastsquaresSol = cmap (* (-0.5)) $ (res <\> mat) ?? (Pos $ idxs [1, 2], All)
 
 getPCAEigVec :: Matrix Double -> Matrix Double
 getPCAEigVec = snd . eigSH . trustSym . snd . meanCov
